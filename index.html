@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web audiovisual</title>
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="./css/textfont.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/iconfonts.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 1440px)">
+</head>
+<body>
+    <header>
+            <div>
+                <img src="./assets/imgs/logodos.jpg" height="86" width="177" alt="logo SaloProducer" id>
+            </div>
+            <div>
+                 <img src="./assets/icons/menu.svg" height="40" width="40" alt="menu hamburguesa, barra de navegación" class="menu-icon">
+            </div>
+            <div class="cont-menu active" id="menu">
+                 <ul class="navbar-list">
+                    <li><span class="icon-home"></span>Inicio</li>
+                    <li><span class="icon-services"></span>Servicios</li>
+                    <li><span class="icon-information"></span>Información</li>
+                    <li><span class="icon-contact"></span>Contacto</li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="main--title-container">
+                <h1><span>Experiencia</span>Audiovisual</h1>
+                <p>
+                    El cine es nuestro lugar de encuentro
+                </p>
+                <video width="317" height="177" controls preload="none" class="video--button">
+                    <source src="./assets/videos/videoprincipal.mp4" type="video/mp4"> 
+                    <source src="./assets/videos/videoprincipal.webm" type="video/webm">
+                </video>
+                <span class="play-icon"></span>
+                <a href="services-section" class="arrow"><span></span></a>
+            </div>
+        </section>
+        <section id="services-section" class="services-section">
+            <div class="services-section--title">
+                <h2 class="first-title">Servicios</h2>
+            </div>
+            <section class="sercives-cards--container">
+                <article class="service-detail--card">
+                    <img src="./assets/imgs/comppromocional.jpg" height="289" width="327" alt="Servicio para video promocional">
+                    <h3 class="service--title">Video promocional</h3>
+                    <p class="service--body">¿Necesitas un video promocional para tu empresa? Estas en el sitio indicado, estamos especializados en este tipo de producciones audiovisuales </p>
+                </article>
+                <article class="service-detail--card">
+                    <img src="./assets/imgs/companim.jpg" height="289" width="327" alt="Servicio para animaciones 2D y 3D">
+                    <h3 class="service--title">Animaciones 2D y 3D</h3>
+                    <p class="service--body">¿Vas a crear un comercial, corto o cuento animado? Acá te podemos ayudar con animaciones en 2D y 3D</p>
+                </article>
+                <article class="service-detail--card">
+                    <img src="./assets/imgs/compintro.jpg" height="289" width="327" alt="Servicio para Intros">
+                    <h3 class="service--title">Intros</h3>
+                    <p class="service--body">Sabemos que los intro son muy importantes para todo tipo de programa, por eso con nuestra ayuda tu proyecto comenzará  como lo esperas</p>
+                </article>
+                <article class="service-detail--card">
+                    <img src="./assets/imgs/comppolitica.jpg" height="289" width="327" alt="Servicio para videos politicos">
+                    <h3 class="service--title">Elecciones</h3>
+                    <p class="service--body">Acá te ayudaremos con tus videos promocionales políticos</p>
+                </article>
+                <article class="service-detail--card">
+                    <img src="./assets/imgs/compmedicina.jpg" height="289" width="327" alt="Servicio para videos informativos">
+                    <h3 class="service--title">Video informativo</h3>
+                    <p class="service--body">Los videos informativos son el tipo de video más consumido alrededor de todo el mundo y podemos encontrar varios formatos diferentes  </p>
+                </article>
+                <article class="service-detail--card">
+                    <img src="./assets/imgs/compdocumental.jpg" height="289" width="327" alt="Servicio para documentales">
+                    <h3 class="service--title">Documentales</h3>
+                    <p class="service--body">¿Necesitas hacer una representación audiovisual de la realidad? Contáctanos y aquí te ayudaremos</p>
+                </article>
+            </section>
+        </section>
+        <section class="information-section">
+            <div class="information--title-container">
+                <h2 class="second-title">¿Qué se hace?</h2> 
+                <p>
+                    Este es un sitio especializado para 
+                    realizar, editar, trabajar en ideas para videos que necesiten de todo tipo de formatos.
+                </p>
+                <p>
+                    Se trabaja en todo tipo 
+                    de contenido audiovisual para enriquecer sus proyectos y empresas 
+                    dando mensajes ilustrativos animados
+                </p>
+            </div>
+            <aside>
+                <img src="./assets/imgs/foto.jpg" height="348" width="341" alt="Foto para banner de realizadora audiovisual">
+                <h2 class="second-title">Ingeniera en Multimedia</h2>
+                <p>¿Quieres ver más de videos?</p>
+                <a href="https://www.behance.net/salomateus/" class="banner--button">Ver videos</a>
+            </aside>
+        </section>
+        <section class="contact-section">
+            <h2 class="first-title">Contacto</h2>
+            <form action="">
+                <div class="inputcol">
+                    <label for="name">
+                    </label>
+                    <input type="text" id="name" placeholder="Nombre">
+                </div>
+                <div class="inputcol">
+                    <label for="email">
+                    </label>
+                    <input type="email" id="email" placeholder="Correo electrónico">
+                </div>
+                <div>
+                    <label for="message">
+                    </label>
+                    <textarea name="message" id="message" placeholder="Mensaje"></textarea>
+                </div>
+                <button type="submit" class="banner--button">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="top-footer">
+            <img src="./assets/imgs/logodos.jpg" height="152" width="308" alt="Logo SaloProducer">
+        </section>
+        <section class="middle-footer">
+            <p>María Salomé Mateus Marín</p>
+            <p>Ingeniera en Multimedia</p>
+            <p>3144352941</p>
+        </section>
+        <section class="bottom-footer">
+            <p class="sigueme-footer">Sígueme</p>
+            <ul class="redes">
+                <li> <a href="https://www.facebook.com/salome.mateus8" target="_blank" rel="nofollow,noopener"><span></span></a> </li>
+                <li> <a href="https://www.linkedin.com/in/salome-mateus/" target="_blank" rel="nofollow,noopener"><span></span></a> </li>
+            </ul>
+        </section>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
