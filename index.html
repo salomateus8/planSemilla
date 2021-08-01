@@ -105,22 +105,22 @@
         <section class="contact-section">
             <h2 class="first-title">Contacto</h2>
             <form action="">
-                <div class="inputcol">
+                <div role="alert" aria-live="assertive" class="inputcol">
                     <label for="name">
                     </label>
-                    <input type="text" id="name" placeholder="Nombre">
+                    <input type="text" id="name" aria-required="true" placeholder="Nombre">
                 </div>
-                <div class="inputcol">
+                <div role="alert" aria-live="assertive" class="inputcol">
                     <label for="email">
                     </label>
-                    <input type="email" id="email" placeholder="Correo electrónico">
+                    <input type="email" id="email" aria-required="true" placeholder="Correo electrónico">
                 </div>
-                <div>
+                <div role="alert" aria-live="assertive">
                     <label for="message">
                     </label>
-                    <textarea name="message" id="message" placeholder="Mensaje"></textarea>
+                    <textarea name="message" id="message" aria-required="true" placeholder="Mensaje"></textarea>
                 </div>
-                <button type="submit" class="banner--button">Enviar mensaje</button>
+                <button role=tab stype="submit" class="banner--button">Enviar mensaje</button>
             </form>
         </section>
     </main>
