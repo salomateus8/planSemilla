@@ -1,0 +1,85 @@
+
+*, 
+*:before, *:after {
+	box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  color:color(grayscale,gray-5);
+  font-family: $font-primary;
+  font-size: $font-size;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+p {
+  margin-bottom: map-get($sizes, "base");
+}
+a{
+  color: color(primary, base);
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $font-primary;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: map-get($sizes, "half");
+}
+
+h1{
+  font-size: map-get($sizes, "half");
+}
+h2{
+  font-size: map-get($sizes, "thumb");
+}
+h3{
+  font-size: map-get($sizes, "base");
+}
+h4{
+  font-size: map-get($sizes, "small");
+}
+h5{
+  font-size: map-get($sizes, "tiny");
+}
+h6{
+  font-size: map-get($sizes, "xsmall");
+}
+
+ol,
+ul{
+  margin-bottom: map-get($sizes, "base");
+  padding-left: map-get($sizes, "half");
+}
+
+@include mq-min(md){
+  .container{
+    max-width: 1140px;
+    padding: 0 20px;
+  }
+  h1{
+    font-size: map-get($sizes, "huge");
+  }
+  h2{
+    font-size: map-get($sizes, "xlarge");
+  }
+  h3{
+    font-size: map-get($sizes, "large");
+  }
+  h4{
+    font-size: map-get($sizes, "medium");
+  }
+  h5{
+    font-size: map-get($sizes, "half");
+  }
+  h6{
+    font-size: map-get($sizes, "thumb");
+  }
+}

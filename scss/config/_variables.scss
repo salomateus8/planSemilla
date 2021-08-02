@@ -1,0 +1,92 @@
+// ==========================================================================
+// External Source Definitions 
+// ==========================================================================
+
+$font-size         : 1.6rem;
+$font-primary      : 'Montserrat', sans-serif;
+$font-secondary    : 'HWT';
+$font-icon         : 'iconFont';
+
+// ==========================================================================
+// COLORS : Eje.: background: color( primary, light );
+// ==========================================================================
+
+$colors: (
+   primary: (
+      base: #FFC000,
+      light:#F3AC01,
+      dark:#E59603
+   ),
+   secondary: (
+      base: #B12621,
+      light:#E1251B
+   ),
+   complementary:(
+      one:#F7BB00,
+      two:#FFC200
+   ),
+   controls:(
+      base: #9D9D9D,
+      text: #898989,
+      default: #732F80,
+      default-pre:#3366D2
+   ),
+   alerts: (
+      error:  #B00020
+   ),
+   borders:(
+      color-1: #BDBDBD
+   ),
+   grayscale: (
+      white    : #ffffff,
+      gray-1   : #f4f4f4, 
+      gray-2   : #f7f7f7,
+      gray-3   : #cccccc,
+      gray-4   : #898989,
+      gray-5   : #3D3D3D,
+      gray-6   : #333333,
+      gray-7   : #4A4A4A,  
+      base     : #0F0A09,
+      black    : #000000 
+   ),
+);
+
+// ==========================================================================
+// SPACING : Eje.: padding: map-get($sizes, "tiny");
+// ==========================================================================
+
+$sizes: (
+   xsmall : 1rem, // 10px
+   tiny   : 1.2rem,  // 12px
+   small  : 1.4rem, // 14px
+   base   : 1.6rem,    // 16px
+   thumb  : 1.25rem, // 20px
+   half   : 1.56rem, // 25px
+   medium : 2.125rem, // 34px
+   large  : 2.25rem, // 36px
+   xlarge : 2.5rem,  // 40px
+   huge   : 3.1rem,  // 49px
+);
+
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+
+$breakpoints: (
+   x   : 325px,
+   s   : 550px,
+   xs  : 700px,
+   sm  : 960px,
+   md  : 1180px,
+   lg  : 1282px,
+    l  : 1360px,
+   ml  : 1440px,
+   xx   : 1500px,
+   xl  : 1680px,
+);
+
+// ==========================================================================
+// Alignment
+// ==========================================================================
+
+$alignment: left, center, right, justify;
