@@ -1,0 +1,30 @@
+.services-section {
+    background-color: color( grayscale, white );
+    display: flex;
+    flex-direction: column;
+    min-width: 418px;
+    text-align: center;
+    &__title {
+        height: auto;
+        margin: 50px 0 50px 0;
+        min-width: 288px;
+        text-align: center;
+        @extend %titles;
+    }
+}
+
+.services {
+    padding-top: 20px;
+}
+
+.service {
+    padding: 0 45px 0 45px;
+    img {
+        padding: 19px 0 19px 0;
+    }
+    @extend %subtitle;
+    p {
+        @extend %description;
+    }
+
+}

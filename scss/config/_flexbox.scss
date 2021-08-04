@@ -2,7 +2,7 @@
 // Displays
 $dflexs: flex, inline-flex, block, inline-block, grid, none,;
    @each $dflex in $dflexs {
-   .d-#{$dflex}{
+   .dc-#{$dflex}{
       display: $dflex;
    }
 }
@@ -10,7 +10,7 @@ $dflexs: flex, inline-flex, block, inline-block, grid, none,;
 @include mq-min(sm) {
   $d-sm: flex, block, grid, none, inline-block;
        @each $d-sm in $d-sm {
-       .d-sm-#{$d-sm}{
+       .dc-sm-#{$d-sm}{
           display: $d-sm;
        }
   }
@@ -19,7 +19,7 @@ $dflexs: flex, inline-flex, block, inline-block, grid, none,;
 @include mq-min(md) {
   $d-ms: flex, block, grid, none,inline-block;
        @each $d-ms in $d-ms {
-       .d-md-#{$d-ms}{
+       .dc-md-#{$d-ms}{
           display: $d-ms;
        }
   }
@@ -28,7 +28,7 @@ $dflexs: flex, inline-flex, block, inline-block, grid, none,;
 @include mq-min(lg) {
   $d-ls: flex, block, grid, none,inline-block;
        @each $d-ls in $d-ls {
-       .d-lg-#{$d-ls}{
+       .dc-lg-#{$d-ls}{
           display: $d-ls;
        }
   }
@@ -37,7 +37,7 @@ $dflexs: flex, inline-flex, block, inline-block, grid, none,;
 @include mq-min(xl) {
   $d-xl: flex, block, grid, none,inline-block;
        @each $d-xl in $d-xl {
-       .d-xl-#{$d-xl}{
+       .dc-xl-#{$d-xl}{
           display: $d-xl;
        }
   }
@@ -46,7 +46,7 @@ $dflexs: flex, inline-flex, block, inline-block, grid, none,;
 // Flex Flow Direction : applies to flex containers
 $directions: row, row-reverse, column, column-reverse;
 @each $dflex in $directions {
-   .d-#{$dflex}{
+   .dc-#{$dflex}{
       display: $dflex;
    }
 }
@@ -54,7 +54,7 @@ $directions: row, row-reverse, column, column-reverse;
 // Axis Alignment : applies to flex containers
 $justifys: flex-start, flex-end, center, space-between, space-around, space-evenly;
 @each $justify in $justifys {
-   .jc-#{$justify}{
+   .jcc-#{$justify}{
       justify-content: $justify;
    }
 }
@@ -62,7 +62,7 @@ $justifys: flex-start, flex-end, center, space-between, space-around, space-even
 // Cross-axis Alignment : applies to flex containers
 $aligns: flex-start, flex-end, center, baseline, stretch;
 @each $align in $aligns {
-   .ai-#{$align}{
+   .aii-#{$align}{
       align-items: $align;
    }
 }
@@ -70,7 +70,7 @@ $aligns: flex-start, flex-end, center, baseline, stretch;
 // Packing Flex Lines : applies to multi-line flex containers
 $aligns: flex-start, flex-end, center, space-between, space-around, stretch;
 @each $align in $aligns {
-   .ac-#{$align}{
+   .acc-#{$align}{
       align-content: $align;
    }
 }
@@ -78,7 +78,7 @@ $aligns: flex-start, flex-end, center, space-between, space-around, stretch;
 // Cross-axis Alignment : applies to flex containers
 $aligns: flex-start, flex-end, center, baseline, stretch;
 @each $align in $aligns {
-   .ai-#{$align}{
+   .aii-#{$align}{
       align-items: $align;
    }
 }
@@ -86,7 +86,7 @@ $aligns: flex-start, flex-end, center, baseline, stretch;
 // Cross-axis Alignment : applies to flex items
 $aligns: flex-start, flex-end, center, baseline, stretch;
 @each $align in $aligns {
-   .as-#{$align}{
+   .ass-#{$align}{
       align-self: $align;
    }
 }

@@ -1,0 +1,43 @@
+footer {
+    background-color: color( primary, base );;
+    display: flex;
+    flex-direction: column;
+    min-height: 79.3rem;
+    min-width: 41.8rem;
+    padding-top: 50px;
+    text-align: center;
+    .footer__top {
+        margin: 77px 0 91px 0;
+    }
+    .footer__middle {
+        color: color( primary, dark );;
+        font-size: 2rem;
+        font-weight: 900;
+        margin: 0 0 91px 0;
+    }
+    .footer__bottom {
+        color: color( primary, dark );;
+        font-size: 2.5rem;
+        font-weight: 900;
+        .footer__redes {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+        }
+        li {
+            min-width: 5.4rem;
+            min-height: 5.4rem;
+            a {
+                font-size: 4.5rem;
+            }
+        }
+        span {
+            color: color( grayscale, white );;
+            margin: 14px;
+            width: 5.4rem;
+            height: 5.4rem;
+        }
+        
+    }
+}

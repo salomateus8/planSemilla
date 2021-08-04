@@ -42,3 +42,9 @@ a, button {
       }
    }
 }
+
+aside {
+   a {
+      @extend %botones;   
+   }
+}

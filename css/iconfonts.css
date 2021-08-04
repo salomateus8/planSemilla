@@ -23,16 +23,22 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-home:before {
-    content: "\e901";
-  }
   .icon-contact:before {
     content: "\e900";
+  }
+  .icon-home:before {
+    content: "\e901";
   }
   .icon-information:before {
     content: "\e902";
   }
   .icon-services:before {
     content: "\e903";
+  }
+  .icon-facebook:before {
+    content: "\e904";
+  }
+  .icon-linkedin:before {
+    content: "\e905";
   }
   

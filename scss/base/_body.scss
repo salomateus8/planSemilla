@@ -1,4 +1,3 @@
-
 *, 
 *:before, *:after {
 	box-sizing: border-box;
@@ -9,6 +8,7 @@ html {
 }
 
 body {
+  /*background: red;*/
   color:color(grayscale,gray-5);
   font-family: $font-primary;
   font-size: $font-size;
@@ -27,11 +27,16 @@ p {
 a{
   color: color(primary, base);
 }
-h1, h2, h3, h4, h5, h6{
+h1, h3, h4, h5, h6{
   font-family: $font-primary;
   font-weight: bold;
   line-height: 1;
   margin-bottom: map-get($sizes, "half");
+}
+h2 {
+  font-family: $font-primary;
+  font-weight: bold;
+  line-height: 1;
 }
 
 h1{
