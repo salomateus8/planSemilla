@@ -71,7 +71,7 @@ hr {
 
 /*$font-secondary    : 'HWT';*/
 /* line 1, ../scss/config/_extends.scss */
-.services-section__title, .contact h2 {
+.main__title {
   color: #0636BE;
   font-size: 4.0rem;
   font-weight: bold;
@@ -117,6 +117,13 @@ aside a, .contact button {
   padding: 20px 50px;
 }
 
+@media (min-width: 768px) {
+  /* line 50, ../scss/config/_extends.scss */
+  .main__title {
+    font-size: 6.0rem;
+    line-height: 5.6rem;
+  }
+}
 /* line 5, ../scss/config/_flexbox.scss */
 .dc-flex {
   display: flex;
@@ -491,7 +498,7 @@ h6 {
   font-size: 1.5rem;
 }
 
-/* line 61, ../scss/base/_body.scss */
+/* line 63, ../scss/base/_body.scss */
 ol,
 ul {
   margin-bottom: 2.9rem;
@@ -499,33 +506,33 @@ ul {
 }
 
 @media (min-width: 768px) {
-  /* line 68, ../scss/base/_body.scss */
+  /* line 70, ../scss/base/_body.scss */
   .container {
     max-width: 1140px;
     padding: 0 20px;
   }
 
-  /* line 75, ../scss/base/_body.scss */
+  /* line 77, ../scss/base/_body.scss */
   h2 {
     font-size: 4.5rem;
   }
 
-  /* line 78, ../scss/base/_body.scss */
+  /* line 80, ../scss/base/_body.scss */
   h3 {
     font-size: 4rem;
   }
 
-  /* line 81, ../scss/base/_body.scss */
+  /* line 83, ../scss/base/_body.scss */
   h4 {
     font-size: 3rem;
   }
 
-  /* line 84, ../scss/base/_body.scss */
+  /* line 86, ../scss/base/_body.scss */
   h5 {
     font-size: 2.9rem;
   }
 
-  /* line 87, ../scss/base/_body.scss */
+  /* line 89, ../scss/base/_body.scss */
   h6 {
     font-size: 4rem;
   }
@@ -1056,37 +1063,37 @@ ul {
     font-size: 18px;
   }
 }
-/* line 144, ../scss/config/_mixins.scss */
+/* line 145, ../scss/config/_mixins.scss */
 input::-webkit-input-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 145, ../scss/config/_mixins.scss */
+/* line 146, ../scss/config/_mixins.scss */
 input::-moz-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 146, ../scss/config/_mixins.scss */
+/* line 147, ../scss/config/_mixins.scss */
 input:-ms-input-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 144, ../scss/config/_mixins.scss */
+/* line 145, ../scss/config/_mixins.scss */
 textarea::-webkit-input-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 145, ../scss/config/_mixins.scss */
+/* line 146, ../scss/config/_mixins.scss */
 textarea::-moz-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 146, ../scss/config/_mixins.scss */
+/* line 147, ../scss/config/_mixins.scss */
 textarea:-ms-input-placeholder {
   color: #8CC1F5;
   font-weight: 900;
@@ -1311,8 +1318,12 @@ header {
   width: 100%;
   /*position: fixed;*/
 }
+/* line 5, ../scss/components/_header.scss */
+header .container {
+  position: relative;
+}
 
-/* line 9, ../scss/components/_header.scss */
+/* line 11, ../scss/components/_header.scss */
 .button__menu {
   border: none;
   position: relative;
@@ -1320,7 +1331,7 @@ header {
   height: 4.0rem;*/
   transition: all 250ms;
 }
-/* line 15, ../scss/components/_header.scss */
+/* line 17, ../scss/components/_header.scss */
 .button__menu span {
   background-color: #0636BE;
   display: block;
@@ -1331,20 +1342,20 @@ header {
   border-radius: 10px;
   width: 50px;
 }
-/* line 24, ../scss/components/_header.scss */
+/* line 26, ../scss/components/_header.scss */
 .button__menu span:nth-child(1) {
   height: 10px;
   margin-bottom: 7px;
   top: 0;
   width: 50px;
 }
-/* line 30, ../scss/components/_header.scss */
+/* line 32, ../scss/components/_header.scss */
 .button__menu span:first-child(2) {
   height: 10px;
   top: 9px;
   width: 50px;
 }
-/* line 35, ../scss/components/_header.scss */
+/* line 37, ../scss/components/_header.scss */
 .button__menu span:last-child {
   height: 10px;
   margin-top: 7px;
@@ -1352,30 +1363,46 @@ header {
   width: 50px;
 }
 
-/* line 44, ../scss/components/_header.scss */
+/* line 46, ../scss/components/_header.scss */
 .cont-menu {
   background: #f6f7fB;
   box-shadow: 5px 5px 10px black;
   display: flex;
   height: 22.4rem;
   justify-content: space-between;
+  opacity: 0;
   padding: 0px 20px;
+  position: absolute;
+  right: 0;
+  top: 9rem;
+  visibility: hidden;
   width: auto;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/* line 61, ../scss/components/_header.scss */
+.cont-menu.open {
+  opacity: 1;
+  visibility: visible;
 }
 
-/* line 56, ../scss/components/_header.scss */
+/* line 67, ../scss/components/_header.scss */
 .navbar-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-/* line 61, ../scss/components/_header.scss */
+/* line 72, ../scss/components/_header.scss */
 .navbar-list li {
   margin-top: 23px;
   margin-bottom: 23px;
 }
-/* line 65, ../scss/components/_header.scss */
+/* line 76, ../scss/components/_header.scss */
 .navbar-list span {
   margin-right: 22px;
 }
@@ -1478,6 +1505,24 @@ footer .footer__bottom span {
   /*205px*/
 }
 
+@media (min-width: 768px) {
+  /* line 41, ../scss/pages/_home.scss */
+  body {
+    background: red;
+  }
+}
+@media (min-width: 960px) {
+  /* line 46, ../scss/pages/_home.scss */
+  body {
+    background: purple;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 51, ../scss/pages/_home.scss */
+  body {
+    background: green;
+  }
+}
 /* line 1, ../scss/pages/_services.scss */
 .services-section {
   background-color: #ffffff;
@@ -1486,24 +1531,24 @@ footer .footer__bottom span {
   min-width: 418px;
   text-align: center;
 }
-/* line 7, ../scss/pages/_services.scss */
-.services-section__title {
+/* line 8, ../scss/pages/_services.scss */
+.services-section__title h2 {
   height: auto;
   margin: 50px 0 50px 0;
   min-width: 288px;
   text-align: center;
 }
 
-/* line 16, ../scss/pages/_services.scss */
+/* line 17, ../scss/pages/_services.scss */
 .services {
   padding-top: 20px;
 }
 
-/* line 20, ../scss/pages/_services.scss */
+/* line 21, ../scss/pages/_services.scss */
 .service {
   padding: 0 45px 0 45px;
 }
-/* line 22, ../scss/pages/_services.scss */
+/* line 23, ../scss/pages/_services.scss */
 .service img {
   padding: 19px 0 19px 0;
 }
@@ -1566,33 +1611,33 @@ footer .footer__bottom span {
   min-width: 418px;
   text-align: center;
 }
-/* line 11, ../scss/pages/_contact.scss */
+/* line 8, ../scss/pages/_contact.scss */
 .contact form {
   margin-top: 30px;
 }
-/* line 13, ../scss/pages/_contact.scss */
+/* line 10, ../scss/pages/_contact.scss */
 .contact form .contact__col {
   color: #8CC1F5;
   margin-top: 25px;
 }
-/* line 14, ../scss/pages/_contact.scss */
+/* line 11, ../scss/pages/_contact.scss */
 .contact form .contact__col input {
   background: #D3E9FF;
   border: none;
   min-height: 6.3rem;
   min-width: 28.7rem;
 }
-/* line 20, ../scss/pages/_contact.scss */
+/* line 17, ../scss/pages/_contact.scss */
 .contact form .contact__col p {
   display: none;
 }
-/* line 27, ../scss/pages/_contact.scss */
+/* line 24, ../scss/pages/_contact.scss */
 .contact button {
   display: inline-block;
   margin-top: 20px;
 }
 
-/* line 34, ../scss/pages/_contact.scss */
+/* line 31, ../scss/pages/_contact.scss */
 textarea {
   background: #D3E9FF;
   border: none;
@@ -1602,7 +1647,7 @@ textarea {
   min-height: 13.7rem;
   min-width: 28.7rem;
 }
-/* line 42, ../scss/pages/_contact.scss */
+/* line 39, ../scss/pages/_contact.scss */
 textarea p {
   display: none;
 }

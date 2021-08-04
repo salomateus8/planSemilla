@@ -5,11 +5,12 @@
     min-width: 418px;
     text-align: center;
     &__title {
-        height: auto;
-        margin: 50px 0 50px 0;
-        min-width: 288px;
-        text-align: center;
-        @extend %titles;
+        h2{
+            height: auto;
+            margin: 50px 0 50px 0;
+            min-width: 288px;
+            text-align: center;
+        }
     }
 }
 

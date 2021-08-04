@@ -128,6 +128,7 @@
  // ==========================================================================
  // Mixins prefijos
  // ==========================================================================
+//@include prefix(transition, all 0.2s ease-in-out, webkit moz o ms);
 
  @mixin prefix($property, $value, $prefixes: ()){
    @each $prefix in $prefixes {

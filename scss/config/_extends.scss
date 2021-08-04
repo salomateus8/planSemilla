@@ -46,4 +46,9 @@
     padding: 20px 50px;
 }
 
-
+@include mq-min(md){
+    %titles{
+        font-size: 6.0rem;
+        line-height: 5.6rem;
+    }
+}

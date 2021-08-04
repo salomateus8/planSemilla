@@ -37,3 +37,18 @@
         width: 20.5rem; /*205px*/
     }
 }
+@include mq-min(md){
+    body{
+        background: red;
+    }
+}
+@include mq-min(lg){
+    body{
+        background: purple;
+    }
+}
+@include mq-min(xl){
+    body{
+        background: green;
+    }
+}

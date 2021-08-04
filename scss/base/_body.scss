@@ -57,7 +57,9 @@ h5{
 h6{
   font-size: map-get($sizes, "xsmall");
 }
-
+.main__title{
+  @extend %titles;
+}
 ol,
 ul{
   margin-bottom: map-get($sizes, "base");
