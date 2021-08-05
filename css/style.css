@@ -1394,7 +1394,6 @@ header .container {
 
 /* line 11, ../scss/components/_header.scss */
 .button__menu {
-  display: none;
   background: transparent;
   box-shadow: none;
   border: none;
@@ -1403,7 +1402,7 @@ header .container {
   height: 4.0rem;*/
   transition: all 250ms;
 }
-/* line 20, ../scss/components/_header.scss */
+/* line 19, ../scss/components/_header.scss */
 .button__menu span {
   background-color: #0636BE;
   display: block;
@@ -1414,20 +1413,20 @@ header .container {
   border-radius: 10px;
   width: 50px;
 }
-/* line 29, ../scss/components/_header.scss */
+/* line 28, ../scss/components/_header.scss */
 .button__menu span:nth-child(1) {
   height: 10px;
   margin-bottom: 7px;
   top: 0;
   width: 50px;
 }
-/* line 35, ../scss/components/_header.scss */
+/* line 34, ../scss/components/_header.scss */
 .button__menu span:first-child(2) {
   height: 10px;
   top: 9px;
   width: 50px;
 }
-/* line 40, ../scss/components/_header.scss */
+/* line 39, ../scss/components/_header.scss */
 .button__menu span:last-child {
   height: 10px;
   margin-top: 7px;
@@ -1435,7 +1434,7 @@ header .container {
   width: 50px;
 }
 
-/* line 48, ../scss/components/_header.scss */
+/* line 47, ../scss/components/_header.scss */
 .cont-menu {
   background: #f6f7fB;
   box-shadow: 5px 5px 10px black;
@@ -1456,25 +1455,25 @@ header .container {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 63, ../scss/components/_header.scss */
+/* line 62, ../scss/components/_header.scss */
 .cont-menu.open {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 69, ../scss/components/_header.scss */
+/* line 68, ../scss/components/_header.scss */
 .navbar-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-/* line 74, ../scss/components/_header.scss */
+/* line 73, ../scss/components/_header.scss */
 .navbar-list li {
   margin-top: 23px;
   margin-bottom: 23px;
 }
-/* line 78, ../scss/components/_header.scss */
+/* line 77, ../scss/components/_header.scss */
 .navbar-list span {
   margin-right: 22px;
 }
