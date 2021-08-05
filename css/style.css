@@ -69,6 +69,84 @@ hr {
   border-top: 1px solid #f2f2f2;
 }
 
+@font-face {
+  font-family: 'iconFont';
+  src: url("../fonts/iconFont/iconFont.eot?howkf6"), url("../fonts/iconFont/iconFont.woff?howkf6") format("woff"), url("../fonts/iconFont/iconFont.woff2?howkf6") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* line 15, ../scss/config/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconFont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /*$font-secondary    : 'HWT';*/
 /* line 1, ../scss/config/_extends.scss */
 .main__title {
@@ -1176,6 +1254,36 @@ aside {
       @extend %botones;   
    }
 }*/
+/* line 1, ../scss/base/_icons.scss */
+.icon-contact:before {
+  content: "\e900";
+}
+
+/* line 4, ../scss/base/_icons.scss */
+.icon-home:before {
+  content: "\e901";
+}
+
+/* line 7, ../scss/base/_icons.scss */
+.icon-information:before {
+  content: "\e902";
+}
+
+/* line 10, ../scss/base/_icons.scss */
+.icon-services:before {
+  content: "\e903";
+}
+
+/* line 13, ../scss/base/_icons.scss */
+.icon-facebook:before {
+  content: "\e904";
+}
+
+/* line 16, ../scss/base/_icons.scss */
+.icon-linkedin:before {
+  content: "\e905";
+}
+
 /* line 1, ../scss/base/_tabs.scss */
 .nav-tabs {
   background: #f4f4f4;
