@@ -56,11 +56,12 @@
  @mixin button($bg, $color: color(grayscale, white)) {
     background: $bg;
     border-radius: 50px;
-    border: 0;
+    border: 2px solid color( borders, color-1 );
     color: $color;
     font-family: $font-primary;
     font-size: map-get($sizes, base);
     font-weight: bold; 
+    width: 28.7rem;
     &:hover {
       background: darken($bg, 7%);
       transition: all 0.2s ease;
@@ -68,7 +69,7 @@
     }
     &:focus {
        outline: 0;
-       box-shadow: 0 0 0 0.15rem rgba(color( primary, base ), 0.25);
+       box-shadow: 0 0 0 0.6rem rgba(color( primary, base ), 0.25);
        text-decoration: none;
     }
     &:active {

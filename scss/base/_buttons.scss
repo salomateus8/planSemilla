@@ -5,9 +5,9 @@
    cursor: pointer;
    font-family: $font-primary;
    font-size: map-get($sizes, base);
-   font-weight: 700; 
-   height: 46px;
-   line-height: 46px;
+   font-weight: 900; 
+   height: 7.3rem;
+   line-height: 7.3rem;
    outline: none;
    padding: 0 1.4rem;
    width: 100%;
@@ -43,7 +43,7 @@
    }
    &.btn-success,
    &.btn-primary {
-      @include button(color(secondary, base), color( grayscale, white ));
+      @include button(color(primary, base), color( grayscale, white ));
       &.outline {
          @include button( transparent, color(secondary, base));
          border: .15rem solid color(secondary, base);

@@ -1,12 +1,12 @@
 .contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 750px;
+    margin-top: 100px;
+    min-height: 650px;
     min-width: 418px;
     text-align: center;
     form {
-        margin-top: 30px;
+        margin-top: 65px;
         .contact__col {
             input {
                 background: color( primary, light );
@@ -14,24 +14,20 @@
                 min-height: 6.3rem;
                 min-width: 28.7rem;
             }
-            p {
-                display: none
-            }
             color: #8CC1F5;
-            margin-top: 25px
+            margin-top: 29px;
         }
     }
     button {
         display: inline-block;
-        margin-top: 20px;
-        @extend %botones;   
+        margin-top: 35px;
     }
 }
 
 textarea {
     background: color( primary, light );
     border: none;
-    margin-top: 25px;
+    margin-top: 29px;
     min-height: 6.3rem;
     min-width: 28.7rem;
     min-height: 13.7rem;

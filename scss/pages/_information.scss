@@ -8,14 +8,20 @@
 }
 
 .information {
-    margin: 55px 50px 0 50px;
+    margin: 50px 50px 0 50px;
     @extend %titlesInformation;
     p {
         color: color( grayscale, white );
         font-size: 2.5rem;
         font-weight: 400;
-        margin-top: 2.9rem;
-        margin-bottom: 70px;
+        margin-top: 5.0rem;
+    }
+    .information__paragraph-one {
+        margin-bottom: 5.5rem;
+    }
+    .information__paragraph {
+        margin-top: 0;
+        margin-bottom: 65px;
     }
 }
 
@@ -24,7 +30,6 @@
         background: color( secondary, base );
         border-radius: 0 0 0 50px;
         box-sizing: border-box;
-        float: right;
         /*padding-left: 15px;*/
         margin: 0 auto;
         min-height: 68.5rem;
