@@ -9,6 +9,9 @@ header {
 }
 
 .button__menu {
+    display: none;
+    background: transparent;
+    box-shadow: none;
     border: none;
     position: relative;
     /*width: 4.0rem;
@@ -42,7 +45,6 @@ header {
         }
     }
 }
-
 .cont-menu {
     background: color( grayscale, gray-2 );
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.0);

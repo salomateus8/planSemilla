@@ -420,11 +420,12 @@ hr {
 
 /* line 5, ../scss/base/_body.scss */
 html {
+  font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
   height: 100%;
 }
 
-/* line 10, ../scss/base/_body.scss */
+/* line 11, ../scss/base/_body.scss */
 body {
   /*background: red;*/
   color: #303030;
@@ -435,25 +436,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 19, ../scss/base/_body.scss */
+/* line 20, ../scss/base/_body.scss */
 .container {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 15px;
 }
 
-/* line 24, ../scss/base/_body.scss */
+/* line 25, ../scss/base/_body.scss */
 p {
   /*margin-bottom: map-get($sizes, "base");*/
   margin-bottom: 2.9rem;
 }
 
-/* line 28, ../scss/base/_body.scss */
+/* line 29, ../scss/base/_body.scss */
 a {
   color: #0636BE;
 }
 
-/* line 31, ../scss/base/_body.scss */
+/* line 32, ../scss/base/_body.scss */
 h1, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -462,48 +463,48 @@ h1, h3, h4, h5, h6 {
   margin-bottom: 2.9rem;
 }
 
-/* line 38, ../scss/base/_body.scss */
+/* line 39, ../scss/base/_body.scss */
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   line-height: 1;
 }
 
-/* line 44, ../scss/base/_body.scss */
+/* line 45, ../scss/base/_body.scss */
 h1 {
   font-size: 2.9rem;
   /*font-size: map-get($sizes, "half");*/
 }
 
-/* line 48, ../scss/base/_body.scss */
+/* line 49, ../scss/base/_body.scss */
 h2 {
   font-size: 4rem;
   /*font-size: map-get($sizes, "thumb");*/
 }
 
-/* line 52, ../scss/base/_body.scss */
+/* line 53, ../scss/base/_body.scss */
 h3 {
   /*font-size: map-get($sizes, "base");*/
   font-size: 2.9rem;
 }
 
-/* line 56, ../scss/base/_body.scss */
+/* line 57, ../scss/base/_body.scss */
 h4 {
   /*font-size: map-get($sizes, "small");*/
   font-size: 2rem;
 }
 
-/* line 60, ../scss/base/_body.scss */
+/* line 61, ../scss/base/_body.scss */
 h5 {
   font-size: 1.7rem;
 }
 
-/* line 63, ../scss/base/_body.scss */
+/* line 64, ../scss/base/_body.scss */
 h6 {
   font-size: 1.5rem;
 }
 
-/* line 69, ../scss/base/_body.scss */
+/* line 70, ../scss/base/_body.scss */
 ol,
 ul {
   /*margin-bottom: map-get($sizes, "base");*/
@@ -513,38 +514,38 @@ ul {
 }
 
 @media (min-width: 768px) {
-  /* line 78, ../scss/base/_body.scss */
+  /* line 79, ../scss/base/_body.scss */
   .container {
     max-width: 1140px;
     padding: 0 20px;
   }
 
-  /* line 82, ../scss/base/_body.scss */
+  /* line 83, ../scss/base/_body.scss */
   h1 {
     /*font-size: map-get($sizes, "huge");*/
   }
 
-  /* line 86, ../scss/base/_body.scss */
+  /* line 87, ../scss/base/_body.scss */
   h2 {
     /*font-size: map-get($sizes, "xlarge");*/
   }
 
-  /* line 90, ../scss/base/_body.scss */
+  /* line 91, ../scss/base/_body.scss */
   h3 {
     /*font-size: map-get($sizes, "large");*/
   }
 
-  /* line 94, ../scss/base/_body.scss */
+  /* line 95, ../scss/base/_body.scss */
   h4 {
     /*font-size: map-get($sizes, "medium");*/
   }
 
-  /* line 98, ../scss/base/_body.scss */
+  /* line 99, ../scss/base/_body.scss */
   h5 {
     /*font-size: map-get($sizes, "half");*/
   }
 
-  /* line 102, ../scss/base/_body.scss */
+  /* line 103, ../scss/base/_body.scss */
   h6 {
     /*font-size: map-get($sizes, "thumb");*/
   }
@@ -1339,6 +1340,46 @@ aside {
     display: none !important;
   }
 }
+/* line 3, ../scss/base/_modal.scss */
+.modal .modal-dialog {
+  display: flex;
+  transform: translateY(0%);
+  top: 30%;
+}
+/* line 8, ../scss/base/_modal.scss */
+.modal .modal-content {
+  background: url("../images/home/fondomovil.png") no-repeat 0 0;
+  background-size: cover;
+  box-shadow: 1px 7px 25px black;
+  border: none;
+}
+/* line 13, ../scss/base/_modal.scss */
+.modal .modal-content .modal-header {
+  background: white;
+  padding: 0;
+}
+/* line 16, ../scss/base/_modal.scss */
+.modal .modal-content .modal-header P {
+  color: #0636BE;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 10px 0 10px 50px;
+  text-align: center;
+}
+/* line 23, ../scss/base/_modal.scss */
+.modal .modal-content .modal-header .close {
+  color: #0636BE;
+  cursor: pointer;
+  font-size: 4.5rem;
+  position: absolute;
+  right: 20px;
+}
+/* line 31, ../scss/base/_modal.scss */
+.modal .modal-content video {
+  display: block;
+  margin: 0 auto;
+}
+
 /* line 1, ../scss/components/_header.scss */
 header {
   background: #ffffff;
@@ -1353,13 +1394,16 @@ header .container {
 
 /* line 11, ../scss/components/_header.scss */
 .button__menu {
+  display: none;
+  background: transparent;
+  box-shadow: none;
   border: none;
   position: relative;
   /*width: 4.0rem;
   height: 4.0rem;*/
   transition: all 250ms;
 }
-/* line 17, ../scss/components/_header.scss */
+/* line 20, ../scss/components/_header.scss */
 .button__menu span {
   background-color: #0636BE;
   display: block;
@@ -1370,20 +1414,20 @@ header .container {
   border-radius: 10px;
   width: 50px;
 }
-/* line 26, ../scss/components/_header.scss */
+/* line 29, ../scss/components/_header.scss */
 .button__menu span:nth-child(1) {
   height: 10px;
   margin-bottom: 7px;
   top: 0;
   width: 50px;
 }
-/* line 32, ../scss/components/_header.scss */
+/* line 35, ../scss/components/_header.scss */
 .button__menu span:first-child(2) {
   height: 10px;
   top: 9px;
   width: 50px;
 }
-/* line 37, ../scss/components/_header.scss */
+/* line 40, ../scss/components/_header.scss */
 .button__menu span:last-child {
   height: 10px;
   margin-top: 7px;
@@ -1391,7 +1435,7 @@ header .container {
   width: 50px;
 }
 
-/* line 46, ../scss/components/_header.scss */
+/* line 48, ../scss/components/_header.scss */
 .cont-menu {
   background: #f6f7fB;
   box-shadow: 5px 5px 10px black;
@@ -1412,25 +1456,25 @@ header .container {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 61, ../scss/components/_header.scss */
+/* line 63, ../scss/components/_header.scss */
 .cont-menu.open {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 67, ../scss/components/_header.scss */
+/* line 69, ../scss/components/_header.scss */
 .navbar-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-/* line 72, ../scss/components/_header.scss */
+/* line 74, ../scss/components/_header.scss */
 .navbar-list li {
   margin-top: 23px;
   margin-bottom: 23px;
 }
-/* line 76, ../scss/components/_header.scss */
+/* line 78, ../scss/components/_header.scss */
 .navbar-list span {
   margin-right: 22px;
 }
@@ -1660,14 +1704,15 @@ footer .footer__bottom span {
   border: none;
   min-height: 6.3rem;
   min-width: 28.7rem;
+  padding: 20px;
 }
-/* line 21, ../scss/pages/_contact.scss */
+/* line 22, ../scss/pages/_contact.scss */
 .contact button {
   display: inline-block;
   margin-top: 35px;
 }
 
-/* line 27, ../scss/pages/_contact.scss */
+/* line 28, ../scss/pages/_contact.scss */
 textarea {
   background: #D3E9FF;
   border: none;
@@ -1676,8 +1721,9 @@ textarea {
   min-width: 28.7rem;
   min-height: 13.7rem;
   min-width: 28.7rem;
+  padding: 20px;
 }
-/* line 35, ../scss/pages/_contact.scss */
+/* line 37, ../scss/pages/_contact.scss */
 textarea p {
   display: none;
 }
