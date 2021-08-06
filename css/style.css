@@ -69,6 +69,84 @@ hr {
   border-top: 1px solid #f2f2f2;
 }
 
+@font-face {
+  font-family: 'iconFont';
+  src: url("../fonts/iconFont/iconFont.eot?howkf6"), url("../fonts/iconFont/iconFont.woff?howkf6") format("woff"), url("../fonts/iconFont/iconFont.woff2?howkf6") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* line 15, ../scss/config/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconFont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/monserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/monserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /*$font-secondary    : 'HWT';*/
 /* line 1, ../scss/config/_extends.scss */
 .main__title {
@@ -231,7 +309,7 @@ hr {
     display: inline-block;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   /* line 40, ../scss/config/_flexbox.scss */
   .dc-xl-flex {
     display: flex;
@@ -1176,6 +1254,36 @@ aside {
       @extend %botones;   
    }
 }*/
+/* line 1, ../scss/base/_icons.scss */
+.icon-contact:before {
+  content: "\e900";
+}
+
+/* line 4, ../scss/base/_icons.scss */
+.icon-home:before {
+  content: "\e901";
+}
+
+/* line 7, ../scss/base/_icons.scss */
+.icon-information:before {
+  content: "\e902";
+}
+
+/* line 10, ../scss/base/_icons.scss */
+.icon-services:before {
+  content: "\e903";
+}
+
+/* line 13, ../scss/base/_icons.scss */
+.icon-facebook:before {
+  content: "\e904";
+}
+
+/* line 16, ../scss/base/_icons.scss */
+.icon-linkedin:before {
+  content: "\e905";
+}
+
 /* line 1, ../scss/base/_tabs.scss */
 .nav-tabs {
   background: #f4f4f4;
@@ -1384,15 +1492,16 @@ aside {
 header {
   background: #ffffff;
   min-height: 112px;
+  padding-top: 10px;
   width: 100%;
   /*position: fixed;*/
 }
-/* line 5, ../scss/components/_header.scss */
+/* line 6, ../scss/components/_header.scss */
 header .container {
   position: relative;
 }
 
-/* line 11, ../scss/components/_header.scss */
+/* line 12, ../scss/components/_header.scss */
 .button__menu {
   background: transparent;
   box-shadow: none;
@@ -1402,8 +1511,10 @@ header .container {
   height: 4.0rem;*/
   transition: all 250ms;
 }
-/* line 19, ../scss/components/_header.scss */
+/* line 20, ../scss/components/_header.scss */
 .button__menu span {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   background-color: #0636BE;
   display: block;
   height: 10px;
@@ -1413,34 +1524,67 @@ header .container {
   border-radius: 10px;
   width: 50px;
 }
-/* line 28, ../scss/components/_header.scss */
-.button__menu span:nth-child(1) {
+/* line 31, ../scss/components/_header.scss */
+.button__menu span:nth-child(1) button.open {
+  animation-name: top-line-animation;
   height: 10px;
   margin-bottom: 7px;
   top: 0;
   width: 50px;
 }
-/* line 34, ../scss/components/_header.scss */
-.button__menu span:first-child(2) {
+/* line 38, ../scss/components/_header.scss */
+.button__menu span:first-child(2) button.open {
+  animation-name: top-line-animation;
   height: 10px;
   top: 9px;
   width: 50px;
 }
-/* line 39, ../scss/components/_header.scss */
-.button__menu span:last-child {
+/* line 44, ../scss/components/_header.scss */
+.button__menu span:last-child button.open {
+  animation-name: top-line-animation;
+  height: 10px;
+  margin-top: 7px;
+  top: 18px;
+  width: 50px;
+}
+/* line 51, ../scss/components/_header.scss */
+.button__menu span:nth-child(1) button {
+  animation-name: top-line-animation;
+  height: 10px;
+  margin-bottom: 7px;
+  top: 0;
+  width: 50px;
+}
+/* line 58, ../scss/components/_header.scss */
+.button__menu span:first-child(2) button {
+  animation-name: top-line-animation;
+  height: 10px;
+  top: 9px;
+  width: 50px;
+}
+/* line 64, ../scss/components/_header.scss */
+.button__menu span:last-child button {
+  animation-name: top-line-animation;
   height: 10px;
   margin-top: 7px;
   top: 18px;
   width: 50px;
 }
 
-/* line 47, ../scss/components/_header.scss */
+@keyframes top-line-animation {
+  50%, 100% {
+    margin: 0 auto;
+    transform: translateY(2px) rotate(-45deg);
+  }
+}
+/* line 81, ../scss/components/_header.scss */
 .cont-menu {
   background: #f6f7fB;
   box-shadow: 5px 5px 10px black;
   display: flex;
   height: 22.4rem;
   justify-content: space-between;
+  margin-top: 20px;
   opacity: 0;
   padding: 0px 20px;
   position: absolute;
@@ -1455,29 +1599,79 @@ header .container {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 62, ../scss/components/_header.scss */
+/* line 97, ../scss/components/_header.scss */
 .cont-menu.open {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 68, ../scss/components/_header.scss */
+/* line 103, ../scss/components/_header.scss */
 .navbar-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-/* line 73, ../scss/components/_header.scss */
+/* line 108, ../scss/components/_header.scss */
 .navbar-list li {
   margin-top: 23px;
   margin-bottom: 23px;
 }
-/* line 77, ../scss/components/_header.scss */
+/* line 112, ../scss/components/_header.scss */
 .navbar-list span {
   margin-right: 22px;
 }
 
+@media (min-width: 768px) {
+  /* line 118, ../scss/components/_header.scss */
+  body {
+    background: red;
+  }
+}
+/*@include mq-min(lg){
+    body{
+        background: purple;
+    }
+}*/
+@media (min-width: 1440px) {
+  /* line 128, ../scss/components/_header.scss */
+  .container {
+    min-width: 1440px;
+    padding: 0 65px 0 0;
+  }
+  /* line 129, ../scss/components/_header.scss */
+  .container img {
+    margin: 0 0 0 94px;
+    border: none;
+  }
+  /* line 135, ../scss/components/_header.scss */
+  .container .button__menu {
+    display: none;
+  }
+  /* line 138, ../scss/components/_header.scss */
+  .container .cont-menu {
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    box-shadow: none;
+    position: static;
+    height: auto;
+    margin-top: 0;
+    padding: 0 0 0 0;
+  }
+  /* line 147, ../scss/components/_header.scss */
+  .container .cont-menu .navbar-list {
+    display: flex;
+  }
+  /* line 149, ../scss/components/_header.scss */
+  .container .cont-menu .navbar-list li {
+    padding: 0 35px 0 35px;
+  }
+  /* line 152, ../scss/components/_header.scss */
+  .container .cont-menu .navbar-list span {
+    display: none;
+  }
+}
 /* line 1, ../scss/components/_footer.scss */
 footer {
   background-color: #0636BE;
@@ -1581,16 +1775,36 @@ footer .footer__bottom span {
     background: red;
   }
 }
-@media (min-width: 960px) {
-  /* line 46, ../scss/pages/_home.scss */
-  body {
-    background: purple;
-  }
-}
-@media (min-width: 1200px) {
+/*@include mq-min(lg){
+    body{
+        background: purple;
+    }
+}*/
+@media (min-width: 1440px) {
   /* line 51, ../scss/pages/_home.scss */
-  body {
-    background: green;
+  .banner {
+    background: url("../images/home/backgroundcsddHeaderfinal.jpg") no-repeat 0 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 56, ../scss/pages/_home.scss */
+  .banner .banner__text {
+    margin: 0 100px 0 100px;
+    padding: 0 100px 0 31px;
+    text-align: left;
+  }
+  /* line 60, ../scss/pages/_home.scss */
+  .banner .banner__text h1 {
+    margin: auto;
+  }
+  /* line 63, ../scss/pages/_home.scss */
+  .banner .banner__text p {
+    margin-top: 15px;
+  }
+  /* line 67, ../scss/pages/_home.scss */
+  .banner .banner__video--play {
+    margin: 60px 0 0 100px;
   }
 }
 /* line 1, ../scss/pages/_services.scss */
@@ -1616,13 +1830,28 @@ footer .footer__bottom span {
 
 /* line 21, ../scss/pages/_services.scss */
 .service {
+  width: 429px;
   padding: 0 45px 0 45px;
 }
-/* line 23, ../scss/pages/_services.scss */
+/* line 24, ../scss/pages/_services.scss */
 .service img {
   padding: 19px 0 19px 0;
 }
 
+@media (min-width: 1440px) {
+  /* line 35, ../scss/pages/_services.scss */
+  .services {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  /* line 41, ../scss/pages/_services.scss */
+  .services .service {
+    padding: 0 25px 0 25px;
+  }
+}
 /* line 1, ../scss/pages/_information.scss */
 .information-section {
   background: url("../images/home/imgBackgroundmobilesection.jpg") no-repeat 0 0;
@@ -1679,6 +1908,24 @@ footer .footer__bottom span {
   margin-bottom: 2.9rem;
 }
 
+@media (min-width: 1440px) {
+  /* line 54, ../scss/pages/_information.scss */
+  .information-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 700px;
+    align-items: flex-start;
+  }
+  /* line 59, ../scss/pages/_information.scss */
+  .information-section p {
+    max-width: 47.9rem;
+  }
+  /* line 62, ../scss/pages/_information.scss */
+  .information-section aside {
+    margin: auto;
+    padding: 0;
+  }
+}
 /* line 1, ../scss/pages/_contact.scss */
 .contact {
   display: flex;
@@ -1725,4 +1972,11 @@ textarea {
 /* line 37, ../scss/pages/_contact.scss */
 textarea p {
   display: none;
+}
+
+@media (min-width: 1440px) {
+  /* line 43, ../scss/pages/_contact.scss */
+  .contact__col {
+    display: flex;
+  }
 }

@@ -42,13 +42,30 @@
         background: red;
     }
 }
-@include mq-min(lg){
+/*@include mq-min(lg){
     body{
         background: purple;
     }
-}
+}*/
 @include mq-min(xl){
-    body{
-        background: green;
+    .banner {
+        background: url("../images/home/backgroundcsddHeaderfinal.jpg") no-repeat 0 0;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        .banner__text {
+            margin: 0 100px 0 100px;
+            padding: 0 100px 0 31px;
+            text-align: left;
+            h1 {
+                margin: auto;
+            }
+            p {
+                margin-top: 15px;
+            }
+        }
+        .banner__video--play {
+            margin: 60px 0 0 100px;
+        }
     }
 }

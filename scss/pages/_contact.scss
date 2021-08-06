@@ -38,3 +38,9 @@ textarea {
         display: none
     }
 }
+
+@include mq-min(xl){
+    .contact__col {
+        display: flex;
+    }
+}

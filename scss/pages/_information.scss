@@ -49,3 +49,20 @@
         }
     }
 }
+
+@include mq-min(xl){
+    .information-section {
+        display: flex;
+        flex-direction: row;
+        min-height: 700px;
+        align-items: flex-start;
+        p {
+            max-width: 47.9rem;
+        }
+        aside {
+           
+            margin: auto;
+            padding: 0;
+        }
+    }
+}

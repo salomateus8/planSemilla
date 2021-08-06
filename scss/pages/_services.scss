@@ -19,6 +19,7 @@
 }
 
 .service {
+    width: 429px;
     padding: 0 45px 0 45px;
     img {
         padding: 19px 0 19px 0;
@@ -28,4 +29,17 @@
         @extend %description;
     }
 
+}
+
+@include mq-min(xl){
+    .services {
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        .service {
+            padding: 0 25px 0 25px;
+        }
+    }
 }

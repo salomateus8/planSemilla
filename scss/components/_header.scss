@@ -1,6 +1,7 @@
 header {
     background: color( grayscale, white );
     min-height: 112px;
+    padding-top: 10px;
     width: 100%;
     .container{
         position: relative;
@@ -17,6 +18,8 @@ header {
     height: 4.0rem;*/
     transition: all 250ms;
     span {
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
         background-color: color( primary, base );
         display: block;
         height: 10px;
@@ -25,18 +28,41 @@ header {
         width: 25px;
         border-radius: 10px;
         width: 50px;
-        &:nth-child(1){
+        &:nth-child(1) button.open {
+            animation-name: top-line-animation;
             height: 10px;
             margin-bottom: 7px;
             top: 0;
             width: 50px;
         }
-        &:first-child(2){
+        &:first-child(2) button.open {
+            animation-name: top-line-animation;
             height: 10px;
             top: 9px;
             width: 50px;
         }
-        &:last-child{
+        &:last-child button.open {
+            animation-name: top-line-animation;
+            height: 10px;
+            margin-top: 7px;
+            top: 18px;
+            width: 50px;
+        }
+        &:nth-child(1) button {
+            animation-name: top-line-animation;
+            height: 10px;
+            margin-bottom: 7px;
+            top: 0;
+            width: 50px;
+        }
+        &:first-child(2) button{
+            animation-name: top-line-animation;
+            height: 10px;
+            top: 9px;
+            width: 50px;
+        }
+        &:last-child button {
+            animation-name: top-line-animation;
             height: 10px;
             margin-top: 7px;
             top: 18px;
@@ -44,12 +70,21 @@ header {
         }
     }
 }
+
+@keyframes top-line-animation {
+    50%, 100% {
+        margin: 0 auto;
+        transform: translateY(2px) rotate(-45deg);
+    }
+}
+
 .cont-menu {
     background: color( grayscale, gray-2 );
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.0);
     display: flex;
     height: 22.4rem;
     justify-content: space-between;
+    margin-top: 20px;
     opacity: 0;
     padding: 0px 20px;
     position: absolute;
@@ -78,3 +113,46 @@ header {
         margin-right: 22px;
     }
  }
+
+ @include mq-min(md){
+    body{
+        background: red;
+    }
+}
+/*@include mq-min(lg){
+    body{
+        background: purple;
+    }
+}*/
+@include mq-min(xl){
+    .container {
+        img {
+            margin: 0 0 0 94px;
+            border: none;
+        }
+        min-width: 1440px;
+        padding: 0 65px 0 0;
+        .button__menu {
+            display: none;
+        }
+        .cont-menu {
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        box-shadow: none;
+        position: static;
+        height: auto;
+        margin-top: 0;
+        padding: 0 0 0 0;
+        .navbar-list {
+            display: flex;
+            li {
+                padding: 0 35px 0 35px;
+            }
+            span {
+                display: none;
+            }
+        }
+        }
+    }
+}
