@@ -1634,22 +1634,22 @@ header .container {
     }
 }*/
 @media (min-width: 1440px) {
-  /* line 128, ../scss/components/_header.scss */
-  .container {
+  /* line 129, ../scss/components/_header.scss */
+  header .container {
     min-width: 1440px;
     padding: 0 65px 0 0;
   }
-  /* line 129, ../scss/components/_header.scss */
-  .container img {
+  /* line 130, ../scss/components/_header.scss */
+  header .container img {
     margin: 0 0 0 94px;
     border: none;
   }
-  /* line 135, ../scss/components/_header.scss */
-  .container .button__menu {
+  /* line 136, ../scss/components/_header.scss */
+  header .container .button__menu {
     display: none;
   }
-  /* line 138, ../scss/components/_header.scss */
-  .container .cont-menu {
+  /* line 139, ../scss/components/_header.scss */
+  header .container .cont-menu {
     opacity: 1;
     visibility: visible;
     background: none;
@@ -1659,16 +1659,16 @@ header .container {
     margin-top: 0;
     padding: 0 0 0 0;
   }
-  /* line 147, ../scss/components/_header.scss */
-  .container .cont-menu .navbar-list {
+  /* line 148, ../scss/components/_header.scss */
+  header .container .cont-menu .navbar-list {
     display: flex;
   }
-  /* line 149, ../scss/components/_header.scss */
-  .container .cont-menu .navbar-list li {
+  /* line 150, ../scss/components/_header.scss */
+  header .container .cont-menu .navbar-list li {
     padding: 0 35px 0 35px;
   }
-  /* line 152, ../scss/components/_header.scss */
-  .container .cont-menu .navbar-list span {
+  /* line 153, ../scss/components/_header.scss */
+  header .container .cont-menu .navbar-list span {
     display: none;
   }
 }
@@ -1940,12 +1940,12 @@ footer .footer__bottom span {
   margin-top: 65px;
 }
 /* line 10, ../scss/pages/_contact.scss */
-.contact form .contact__col {
+.contact form .form-group {
   color: #8CC1F5;
   margin-top: 29px;
 }
 /* line 11, ../scss/pages/_contact.scss */
-.contact form .contact__col input {
+.contact form .form-group input {
   background: #D3E9FF;
   border: none;
   min-height: 6.3rem;
@@ -1963,20 +1963,43 @@ textarea {
   background: #D3E9FF;
   border: none;
   margin-top: 29px;
-  min-height: 6.3rem;
-  min-width: 28.7rem;
   min-height: 13.7rem;
-  min-width: 28.7rem;
   padding: 20px;
+  width: 100%;
 }
-/* line 37, ../scss/pages/_contact.scss */
+/* line 35, ../scss/pages/_contact.scss */
 textarea p {
   display: none;
 }
 
 @media (min-width: 1440px) {
-  /* line 43, ../scss/pages/_contact.scss */
+  /* line 41, ../scss/pages/_contact.scss */
   .contact__col {
     display: flex;
+  }
+
+  /* line 45, ../scss/pages/_contact.scss */
+  .contact form {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  /* line 48, ../scss/pages/_contact.scss */
+  .contact form .form-group {
+    margin-right: 4rem;
+    width: 48%;
+  }
+  /* line 51, ../scss/pages/_contact.scss */
+  .contact form .form-group:nth-child(2n) {
+    margin-right: 0;
+  }
+  /* line 54, ../scss/pages/_contact.scss */
+  .contact form .form-group input {
+    min-width: inherit;
+    width: 100%;
+  }
+  /* line 58, ../scss/pages/_contact.scss */
+  .contact form .form-group.message-field {
+    margin-right: 0;
+    width: 100%;
   }
 }

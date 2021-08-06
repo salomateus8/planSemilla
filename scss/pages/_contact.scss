@@ -7,7 +7,7 @@
     text-align: center;
     form {
         margin-top: 65px;
-        .contact__col {
+        .form-group {
             input {
                 background: color( primary, light );
                 border: none;
@@ -29,11 +29,9 @@ textarea {
     background: color( primary, light );
     border: none;
     margin-top: 29px;
-    min-height: 6.3rem;
-    min-width: 28.7rem;
     min-height: 13.7rem;
-    min-width: 28.7rem;
     padding: 20px;
+    width: 100%;
     p {
         display: none
     }
@@ -42,5 +40,26 @@ textarea {
 @include mq-min(xl){
     .contact__col {
         display: flex;
+    }
+    .contact{
+        form{
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .form-group{
+                margin-right: 4rem;
+                width: 48%;
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
+                input{
+                    min-width: inherit;
+                    width: 100%;
+                }
+                &.message-field{
+                    margin-right: 0;
+                    width: 100%;
+                }
+            }
+        }
     }
 }

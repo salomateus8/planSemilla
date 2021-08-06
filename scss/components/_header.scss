@@ -125,34 +125,37 @@ header {
     }
 }*/
 @include mq-min(xl){
-    .container {
-        img {
-            margin: 0 0 0 94px;
-            border: none;
-        }
-        min-width: 1440px;
-        padding: 0 65px 0 0;
-        .button__menu {
-            display: none;
-        }
-        .cont-menu {
-        opacity: 1;
-        visibility: visible;
-        background: none;
-        box-shadow: none;
-        position: static;
-        height: auto;
-        margin-top: 0;
-        padding: 0 0 0 0;
-        .navbar-list {
-            display: flex;
-            li {
-                padding: 0 35px 0 35px;
+    header{
+        .container {
+            img {
+                margin: 0 0 0 94px;
+                border: none;
             }
-            span {
+            min-width: 1440px;
+            padding: 0 65px 0 0;
+            .button__menu {
                 display: none;
             }
+            .cont-menu {
+            opacity: 1;
+            visibility: visible;
+            background: none;
+            box-shadow: none;
+            position: static;
+            height: auto;
+            margin-top: 0;
+            padding: 0 0 0 0;
+            .navbar-list {
+                display: flex;
+                li {
+                    padding: 0 35px 0 35px;
+                }
+                span {
+                    display: none;
+                }
+            }
+            }
         }
-        }
+
     }
 }
