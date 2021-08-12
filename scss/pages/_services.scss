@@ -19,10 +19,14 @@
 }
 
 .service {
-    width: 429px;
+    max-width: 429px;
     padding: 0 45px 0 45px;
+    width: 100%;
     img {
+        height: auto;
+        max-width: 100%;
         padding: 19px 0 19px 0;
+
     }
     @extend %subtitle;
     p {
@@ -32,6 +36,11 @@
 }
 
 @include mq-min(xl){
+    .services-section {
+        .container {
+            max-width: 1300px;
+        }
+    }
     .services {
         border: none;
         display: flex;
@@ -39,6 +48,7 @@
         margin: 0 auto;
         justify-content: center;
         .service {
+            max-width: 30%;
             padding: 0 25px 0 25px;
         }
     }

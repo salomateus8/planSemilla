@@ -1,65 +1,12 @@
-.contact {
+/*.contact {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
     min-height: 650px;
     min-width: 418px;
     text-align: center;
-    form {
-        margin-top: 65px;
-        .form-group {
-            input {
-                background: color( primary, light );
-                border: none;
-                min-height: 6.3rem;
-                min-width: 28.7rem;
-                padding: 20px;
-            }
-            color: #8CC1F5;
-            margin-top: 29px;
-        }
-    }
     button {
         display: inline-block;
         margin-top: 35px;
     }
-}
-
-textarea {
-    background: color( primary, light );
-    border: none;
-    margin-top: 29px;
-    min-height: 13.7rem;
-    padding: 20px;
-    width: 100%;
-    p {
-        display: none
-    }
-}
-
-@include mq-min(xl){
-    .contact__col {
-        display: flex;
-    }
-    .contact{
-        form{
-            align-items: flex-start;
-            flex-wrap: wrap;
-            .form-group{
-                margin-right: 4rem;
-                width: 48%;
-                &:nth-child(2n){
-                    margin-right: 0;
-                }
-                input{
-                    min-width: inherit;
-                    width: 100%;
-                }
-                &.message-field{
-                    margin-right: 0;
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
+}*/

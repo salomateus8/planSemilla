@@ -519,20 +519,21 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 15px;
+  width: 100%;
 }
 
-/* line 25, ../scss/base/_body.scss */
+/* line 26, ../scss/base/_body.scss */
 p {
   /*margin-bottom: map-get($sizes, "base");*/
   margin-bottom: 2.9rem;
 }
 
-/* line 29, ../scss/base/_body.scss */
+/* line 30, ../scss/base/_body.scss */
 a {
   color: #0636BE;
 }
 
-/* line 32, ../scss/base/_body.scss */
+/* line 33, ../scss/base/_body.scss */
 h1, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -541,48 +542,48 @@ h1, h3, h4, h5, h6 {
   margin-bottom: 2.9rem;
 }
 
-/* line 39, ../scss/base/_body.scss */
+/* line 40, ../scss/base/_body.scss */
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   line-height: 1;
 }
 
-/* line 45, ../scss/base/_body.scss */
+/* line 46, ../scss/base/_body.scss */
 h1 {
   font-size: 2.9rem;
   /*font-size: map-get($sizes, "half");*/
 }
 
-/* line 49, ../scss/base/_body.scss */
+/* line 50, ../scss/base/_body.scss */
 h2 {
   font-size: 4rem;
   /*font-size: map-get($sizes, "thumb");*/
 }
 
-/* line 53, ../scss/base/_body.scss */
+/* line 54, ../scss/base/_body.scss */
 h3 {
   /*font-size: map-get($sizes, "base");*/
   font-size: 2.9rem;
 }
 
-/* line 57, ../scss/base/_body.scss */
+/* line 58, ../scss/base/_body.scss */
 h4 {
   /*font-size: map-get($sizes, "small");*/
   font-size: 2rem;
 }
 
-/* line 61, ../scss/base/_body.scss */
+/* line 62, ../scss/base/_body.scss */
 h5 {
   font-size: 1.7rem;
 }
 
-/* line 64, ../scss/base/_body.scss */
+/* line 65, ../scss/base/_body.scss */
 h6 {
   font-size: 1.5rem;
 }
 
-/* line 70, ../scss/base/_body.scss */
+/* line 71, ../scss/base/_body.scss */
 ol,
 ul {
   /*margin-bottom: map-get($sizes, "base");*/
@@ -592,38 +593,38 @@ ul {
 }
 
 @media (min-width: 768px) {
-  /* line 79, ../scss/base/_body.scss */
+  /* line 80, ../scss/base/_body.scss */
   .container {
     max-width: 1140px;
     padding: 0 20px;
   }
 
-  /* line 83, ../scss/base/_body.scss */
+  /* line 84, ../scss/base/_body.scss */
   h1 {
     /*font-size: map-get($sizes, "huge");*/
   }
 
-  /* line 87, ../scss/base/_body.scss */
+  /* line 88, ../scss/base/_body.scss */
   h2 {
     /*font-size: map-get($sizes, "xlarge");*/
   }
 
-  /* line 91, ../scss/base/_body.scss */
+  /* line 92, ../scss/base/_body.scss */
   h3 {
     /*font-size: map-get($sizes, "large");*/
   }
 
-  /* line 95, ../scss/base/_body.scss */
+  /* line 96, ../scss/base/_body.scss */
   h4 {
     /*font-size: map-get($sizes, "medium");*/
   }
 
-  /* line 99, ../scss/base/_body.scss */
+  /* line 100, ../scss/base/_body.scss */
   h5 {
     /*font-size: map-get($sizes, "half");*/
   }
 
-  /* line 103, ../scss/base/_body.scss */
+  /* line 104, ../scss/base/_body.scss */
   h6 {
     /*font-size: map-get($sizes, "thumb");*/
   }
@@ -1200,6 +1201,85 @@ textarea:-ms-input-placeholder {
   font-weight: 900;
 }
 
+/* line 4, ../scss/base/_form.scss */
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  min-height: 650px;
+  min-width: 418px;
+  text-align: center;
+}
+/* line 11, ../scss/base/_form.scss */
+.contact form {
+  margin-top: 65px;
+  padding: 0 65px;
+}
+/* line 14, ../scss/base/_form.scss */
+.contact form .form-group {
+  color: #8CC1F5;
+  margin-top: 29px;
+}
+/* line 15, ../scss/base/_form.scss */
+.contact form .form-group input {
+  background: #D3E9FF;
+  border: none;
+  min-height: 6.3rem;
+  min-width: 28.7rem;
+  padding: 20px;
+  width: 100%;
+}
+/* line 27, ../scss/base/_form.scss */
+.contact button {
+  display: inline-block;
+  margin-top: 35px;
+}
+
+/* line 33, ../scss/base/_form.scss */
+textarea {
+  background: #D3E9FF;
+  border: none;
+  margin-top: 29px;
+  min-height: 13.7rem;
+  padding: 20px;
+  width: 100%;
+}
+/* line 40, ../scss/base/_form.scss */
+textarea p {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  /* line 46, ../scss/base/_form.scss */
+  .contact__col {
+    display: flex;
+  }
+
+  /* line 50, ../scss/base/_form.scss */
+  .contact form {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  /* line 53, ../scss/base/_form.scss */
+  .contact form .form-group {
+    margin-right: 4rem;
+    width: 48%;
+  }
+  /* line 56, ../scss/base/_form.scss */
+  .contact form .form-group:nth-child(2n) {
+    margin-right: 0;
+  }
+  /* line 59, ../scss/base/_form.scss */
+  .contact form .form-group input {
+    min-width: inherit;
+    width: 100%;
+  }
+  /* line 63, ../scss/base/_form.scss */
+  .contact form .form-group.message-field {
+    margin-right: 0;
+    width: 100%;
+  }
+}
 /* line 1, ../scss/base/_links.scss */
 a, button {
   text-decoration: none;
@@ -1645,7 +1725,7 @@ header .container {
     border: none;
   }
   /* line 136, ../scss/components/_header.scss */
-  header .container .button__menu {
+  header .container button {
     display: none;
   }
   /* line 139, ../scss/components/_header.scss */
@@ -1830,16 +1910,24 @@ footer .footer__bottom span {
 
 /* line 21, ../scss/pages/_services.scss */
 .service {
-  width: 429px;
+  max-width: 429px;
   padding: 0 45px 0 45px;
+  width: 100%;
 }
-/* line 24, ../scss/pages/_services.scss */
+/* line 25, ../scss/pages/_services.scss */
 .service img {
+  height: auto;
+  max-width: 100%;
   padding: 19px 0 19px 0;
 }
 
 @media (min-width: 1440px) {
-  /* line 35, ../scss/pages/_services.scss */
+  /* line 40, ../scss/pages/_services.scss */
+  .services-section .container {
+    max-width: 1300px;
+  }
+
+  /* line 44, ../scss/pages/_services.scss */
   .services {
     border: none;
     display: flex;
@@ -1847,8 +1935,9 @@ footer .footer__bottom span {
     margin: 0 auto;
     justify-content: center;
   }
-  /* line 41, ../scss/pages/_services.scss */
+  /* line 50, ../scss/pages/_services.scss */
   .services .service {
+    max-width: 30%;
     padding: 0 25px 0 25px;
   }
 }
@@ -1926,80 +2015,15 @@ footer .footer__bottom span {
     padding: 0;
   }
 }
-/* line 1, ../scss/pages/_contact.scss */
-.contact {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  min-height: 650px;
-  min-width: 418px;
-  text-align: center;
-}
-/* line 8, ../scss/pages/_contact.scss */
-.contact form {
-  margin-top: 65px;
-}
-/* line 10, ../scss/pages/_contact.scss */
-.contact form .form-group {
-  color: #8CC1F5;
-  margin-top: 29px;
-}
-/* line 11, ../scss/pages/_contact.scss */
-.contact form .form-group input {
-  background: #D3E9FF;
-  border: none;
-  min-height: 6.3rem;
-  min-width: 28.7rem;
-  padding: 20px;
-}
-/* line 22, ../scss/pages/_contact.scss */
-.contact button {
-  display: inline-block;
-  margin-top: 35px;
-}
-
-/* line 28, ../scss/pages/_contact.scss */
-textarea {
-  background: #D3E9FF;
-  border: none;
-  margin-top: 29px;
-  min-height: 13.7rem;
-  padding: 20px;
-  width: 100%;
-}
-/* line 35, ../scss/pages/_contact.scss */
-textarea p {
-  display: none;
-}
-
-@media (min-width: 1440px) {
-  /* line 41, ../scss/pages/_contact.scss */
-  .contact__col {
+/*.contact {
     display: flex;
-  }
-
-  /* line 45, ../scss/pages/_contact.scss */
-  .contact form {
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  /* line 48, ../scss/pages/_contact.scss */
-  .contact form .form-group {
-    margin-right: 4rem;
-    width: 48%;
-  }
-  /* line 51, ../scss/pages/_contact.scss */
-  .contact form .form-group:nth-child(2n) {
-    margin-right: 0;
-  }
-  /* line 54, ../scss/pages/_contact.scss */
-  .contact form .form-group input {
-    min-width: inherit;
-    width: 100%;
-  }
-  /* line 58, ../scss/pages/_contact.scss */
-  .contact form .form-group.message-field {
-    margin-right: 0;
-    width: 100%;
-  }
-}
+    flex-direction: column;
+    margin-top: 100px;
+    min-height: 650px;
+    min-width: 418px;
+    text-align: center;
+    button {
+        display: inline-block;
+        margin-top: 35px;
+    }
+}*/
