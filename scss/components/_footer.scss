@@ -1,20 +1,20 @@
-footer {
+.footer {
     background-color: color( primary, base );;
     display: flex;
     flex-direction: column;
     min-height: 79.3rem;
     min-width: 41.8rem;
     text-align: center;
-    .footer__top {
+    &__top {
         margin: 77px 0 91px 0;
     }
-    .footer__middle {
+    &__middle {
         color: color( primary, dark );;
         font-size: 2rem;
         font-weight: 900;
         margin: 0 0 91px 0;
     }
-    .footer__bottom {
+    &__bottom {
         color: color( primary, dark );;
         font-size: 2.5rem;
         font-weight: 900;
@@ -42,13 +42,13 @@ footer {
 }
 
 @include mq-min(xl){
-    footer {
+    .footer {
         align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         min-height: 381px;
-        .footer__top {
+        &__top {
             margin: 0;
             img {
                 max-width: 20.8rem;
@@ -56,7 +56,7 @@ footer {
                 width: 100%;
             }
         }
-        .footer__middle {
+        &__middle {
             margin: 0 40px 0 0;
         }
     }
