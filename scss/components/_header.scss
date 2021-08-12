@@ -17,9 +17,14 @@ header {
     /*width: 4.0rem;
     height: 4.0rem;*/
     transition: all 250ms;
+    &.menu-open {
+        span {
+            &:nth-child(1) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
     span {
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
         background-color: color( primary, base );
         display: block;
         height: 10px;
@@ -28,53 +33,23 @@ header {
         width: 25px;
         border-radius: 10px;
         width: 50px;
-        &:nth-child(1) button.open {
-            animation-name: top-line-animation;
+        &:nth-child(1) {
             height: 10px;
             margin-bottom: 7px;
             top: 0;
             width: 50px;
         }
-        &:first-child(2) button.open {
-            animation-name: top-line-animation;
+        &:first-child(2) {
             height: 10px;
             top: 9px;
             width: 50px;
         }
-        &:last-child button.open {
-            animation-name: top-line-animation;
+        &:last-child {
             height: 10px;
             margin-top: 7px;
             top: 18px;
             width: 50px;
         }
-        &:nth-child(1) button {
-            animation-name: top-line-animation;
-            height: 10px;
-            margin-bottom: 7px;
-            top: 0;
-            width: 50px;
-        }
-        &:first-child(2) button{
-            animation-name: top-line-animation;
-            height: 10px;
-            top: 9px;
-            width: 50px;
-        }
-        &:last-child button {
-            animation-name: top-line-animation;
-            height: 10px;
-            margin-top: 7px;
-            top: 18px;
-            width: 50px;
-        }
-    }
-}
-
-@keyframes top-line-animation {
-    50%, 100% {
-        margin: 0 auto;
-        transform: translateY(2px) rotate(-45deg);
     }
 }
 
@@ -82,11 +57,11 @@ header {
     background: color( grayscale, gray-2 );
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1.0);
     display: flex;
-    height: 22.4rem;
+    height: 38.0rem;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 12px;
     opacity: 0;
-    padding: 0px 20px;
+    padding: 0px 30px;
     position: absolute;
     right: 0;
     top: 9rem;
@@ -95,8 +70,14 @@ header {
     z-index: 1;
     @include prefix(transition, all 0.5s ease-in-out, webkit moz o ms);
     &.open{
+        border-radius: 0 0 0 10px;
         opacity: 1;
         visibility: visible;
+    }
+    .navbar-list {
+        a {
+            font-size: 30px;
+        }
     }
  }
 
@@ -106,8 +87,7 @@ header {
     padding: 0;
     text-decoration: none;
     li {
-        margin-top: 23px;
-        margin-bottom: 23px;
+        margin-top: 40px;
     }
     span {
         margin-right: 22px;
@@ -116,7 +96,7 @@ header {
 
  @include mq-min(md){
     body{
-        background: red;
+        background: color(grayscale,white);
     }
 }
 /*@include mq-min(lg){
@@ -148,6 +128,7 @@ header {
             .navbar-list {
                 display: flex;
                 li {
+                    margin: 0;
                     padding: 0 35px 0 35px;
                 }
                 span {

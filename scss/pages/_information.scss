@@ -52,17 +52,43 @@
 
 @include mq-min(xl){
     .information-section {
+        background: url("../images/home/backgroundsegundasección.jpg") no-repeat 0 0;
+        background-size: cover;
         display: flex;
         flex-direction: row;
         min-height: 700px;
         align-items: flex-start;
-        p {
-            max-width: 47.9rem;
+        .information {
+            margin: 150px 50px 0 150px;
+            width: 700px;
+            h2 {
+                font-size: 6.5rem;
+            }
+            p {
+                font-size: 3.5rem;
+                line-height: 4.2rem;
+                max-width: 100rem;
+            }
         }
         aside {
-           
-            margin: auto;
-            padding: 0;
+            margin: 0 0 0 180px;
+            width: 505px;
+            height: 876px;
+            img {
+                height: auto;
+                margin: 17px 0 50px 0;
+                max-width: 100%;
+                min-width: 420px;
+            }
+            h2 {
+                line-height: 50px;
+            }
+            .btn {
+                width: 364px;
+                height: 105px;
+                font-size: 35px;
+                padding: 15px 0;
+            }
         }
     }
 }

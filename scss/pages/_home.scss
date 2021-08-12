@@ -39,7 +39,7 @@
 }
 @include mq-min(md){
     body{
-        background: red;
+        background: color(grayscale,white);
     }
 }
 /*@include mq-min(lg){
@@ -58,14 +58,19 @@
             padding: 0 100px 0 31px;
             text-align: left;
             h1 {
+                font-size: 7.0rem;
+                line-height: 10.0rem;
                 margin: auto;
+                span {
+                    font-size: 5.0rem;
+                }
             }
             p {
-                margin-top: 15px;
+                font-size: 2.7rem;
             }
         }
         .banner__video--play {
-            margin: 60px 0 0 100px;
+            margin: 10px 0 0 100px;
         }
     }
 }

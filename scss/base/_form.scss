@@ -4,36 +4,41 @@
 .contact {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    min-height: 650px;
+    margin: 70px 0;
+    min-height: 50px;
     min-width: 418px;
     text-align: center;
-    form {
-        margin-top: 65px;
-        padding: 0 65px;
-        .form-group {
-            input {
-                background: color( primary, light );
-                border: none;
-                min-height: 6.3rem;
-                min-width: 28.7rem;
-                padding: 20px;
-                width: 100%;
-            }
-            color: #8CC1F5;
-            margin-top: 29px;
+    .container {
+        width: auto;
+        padding: 0;
+        .main__title {
+            margin-bottom: 40px;
         }
-    }
-    button {
-        display: inline-block;
-        margin-top: 35px;
+        form {
+            padding: 0 65px;
+            .form-group {
+                input {
+                    background: color( primary, light );
+                    border: none;
+                    min-height: 6.3rem;
+                    min-width: 28.7rem;
+                    padding: 20px;
+                    width: 100%;
+                }
+                color: #8CC1F5;
+                margin-bottom: 0;
+            }
+        }
+        button {
+            display: inline-block;
+            margin-top: 40px;
+        }
     }
 }
 
 textarea {
     background: color( primary, light );
     border: none;
-    margin-top: 29px;
     min-height: 13.7rem;
     padding: 20px;
     width: 100%;
@@ -43,26 +48,56 @@ textarea {
 }
 
 @include mq-min(xl){
-    .contact__col {
-        display: flex;
-    }
     .contact{
-        form{
-            align-items: flex-start;
-            flex-wrap: wrap;
-            .form-group{
-                margin-right: 4rem;
-                width: 48%;
-                &:nth-child(2n){
-                    margin-right: 0;
+        margin: 100px 0;
+        .container {
+            width: auto;
+            padding: 0;
+            .main__title {
+                margin: 25px 0 77px 0;
+            }
+            form{
+                .contact__col {
+                    display: flex;
+                    min-height: 107px;
+                    input {
+                        font-size: 2.5rem;
+                    }
                 }
-                input{
-                    min-width: inherit;
-                    width: 100%;
+                align-items: flex-start;
+                display: flex;
+                flex-wrap: wrap;
+                .form-group{
+                    margin-right: 4rem;
+                    width: 48%;
+                    &:nth-child(2n){
+                        margin-right: 0;
+                    }
+                    input{
+                        min-width: inherit;
+                        width: 100%;
+                    }
+                    &.message-field{
+                        margin-right: 0;
+                        width: 100%;
+                        textarea {
+                            font-size: 2.5rem;
+                            margin: 29px 0 98px 0;
+                            min-height: 35.0rem;
+                        }
+                    }
                 }
-                &.message-field{
-                    margin-right: 0;
+                .form__button {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
                     width: 100%;
+                    button {
+                        font-size: 35px;
+                        height: 105px;
+                        margin: 0 0 19px 0;
+                        width: 364px;
+                    }
                 }
             }
         }

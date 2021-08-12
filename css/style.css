@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -655,34 +656,35 @@ ul {
   background: #0636BE;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   width: 28.7rem;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-default:hover {
   background: #052c9b;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-default:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-default:active {
   background: #04288d;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-default:focus:active, .btn.btn-default:hover:active {
   background: #04288d;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-default.disabled, .btn.btn-default:disabled {
   opacity: .55;
   color: #303030;
@@ -690,11 +692,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-default.disabled:hover, .btn.btn-default:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-default.disabled:focus, .btn.btn-default:disabled:focus {
   box-shadow: none;
 }
@@ -703,6 +705,7 @@ ul {
   background: transparent;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #0636BE;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
@@ -711,28 +714,28 @@ ul {
   border: 0.13rem solid #0636BE;
   box-shadow: none;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:hover {
   background: transparent;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:active {
   background: transparent;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:focus:active, .btn.btn-default.outline:hover:active {
   background: transparent;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-default.outline.disabled, .btn.btn-default.outline:disabled {
   opacity: .55;
   color: #303030;
@@ -740,11 +743,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-default.outline.disabled:hover, .btn.btn-default.outline:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-default.outline.disabled:focus, .btn.btn-default.outline:disabled:focus {
   box-shadow: none;
 }
@@ -753,6 +756,7 @@ ul {
   background: #0636BE;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
@@ -760,28 +764,28 @@ ul {
   width: 28.7rem;
   box-shadow: none;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:hover:hover, .btn.btn-default.outline:active:hover {
   background: #052c9b;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:hover:focus, .btn.btn-default.outline:active:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:hover:active, .btn.btn-default.outline:active:active {
   background: #04288d;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:hover:focus:active, .btn.btn-default.outline:hover:hover:active, .btn.btn-default.outline:active:focus:active, .btn.btn-default.outline:active:hover:active {
   background: #04288d;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:hover.disabled, .btn.btn-default.outline:hover:disabled, .btn.btn-default.outline:active.disabled, .btn.btn-default.outline:active:disabled {
   opacity: .55;
   color: #303030;
@@ -789,11 +793,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:hover.disabled:hover, .btn.btn-default.outline:hover:disabled:hover, .btn.btn-default.outline:active.disabled:hover, .btn.btn-default.outline:active:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-default.outline:hover.disabled:focus, .btn.btn-default.outline:hover:disabled:focus, .btn.btn-default.outline:active.disabled:focus, .btn.btn-default.outline:active:disabled:focus {
   box-shadow: none;
 }
@@ -802,6 +806,7 @@ ul {
   background: #f4f4f4;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
@@ -815,28 +820,28 @@ ul {
   padding: 0;
   width: 45px;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-icon:hover {
   background: #e2e2e2;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-icon:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-icon:active {
   background: #dbdbdb;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-icon:focus:active, .btn.btn-icon:hover:active {
   background: #dbdbdb;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-icon.disabled, .btn.btn-icon:disabled {
   opacity: .55;
   color: #303030;
@@ -844,11 +849,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-icon.disabled:hover, .btn.btn-icon:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-icon.disabled:focus, .btn.btn-icon:disabled:focus {
   box-shadow: none;
 }
@@ -861,34 +866,35 @@ ul {
   background: #0636BE;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   width: 28.7rem;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-success:hover, .btn.btn-primary:hover {
   background: #052c9b;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-success:focus, .btn.btn-primary:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-success:active, .btn.btn-primary:active {
   background: #04288d;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-success:focus:active, .btn.btn-success:hover:active, .btn.btn-primary:focus:active, .btn.btn-primary:hover:active {
   background: #04288d;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-success.disabled, .btn.btn-success:disabled, .btn.btn-primary.disabled, .btn.btn-primary:disabled {
   opacity: .55;
   color: #303030;
@@ -896,11 +902,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-success.disabled:hover, .btn.btn-success:disabled:hover, .btn.btn-primary.disabled:hover, .btn.btn-primary:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-success.disabled:focus, .btn.btn-success:disabled:focus, .btn.btn-primary.disabled:focus, .btn.btn-primary:disabled:focus {
   box-shadow: none;
 }
@@ -909,6 +915,7 @@ ul {
   background: transparent;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #5046C1;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
@@ -917,28 +924,28 @@ ul {
   border: 0.15rem solid #5046C1;
   box-shadow: none;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:hover, .btn.btn-primary.outline:hover {
   background: transparent;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:focus, .btn.btn-primary.outline:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:active, .btn.btn-primary.outline:active {
   background: transparent;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:focus:active, .btn.btn-success.outline:hover:active, .btn.btn-primary.outline:focus:active, .btn.btn-primary.outline:hover:active {
   background: transparent;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-success.outline.disabled, .btn.btn-success.outline:disabled, .btn.btn-primary.outline.disabled, .btn.btn-primary.outline:disabled {
   opacity: .55;
   color: #303030;
@@ -946,11 +953,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-success.outline.disabled:hover, .btn.btn-success.outline:disabled:hover, .btn.btn-primary.outline.disabled:hover, .btn.btn-primary.outline:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-success.outline.disabled:focus, .btn.btn-success.outline:disabled:focus, .btn.btn-primary.outline.disabled:focus, .btn.btn-primary.outline:disabled:focus {
   box-shadow: none;
 }
@@ -959,34 +966,35 @@ ul {
   background: #5046C1;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   width: 28.7rem;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:hover:hover, .btn.btn-success.outline:active:hover, .btn.btn-primary.outline:hover:hover, .btn.btn-primary.outline:active:hover {
   background: #4239aa;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:hover:focus, .btn.btn-success.outline:active:focus, .btn.btn-primary.outline:hover:focus, .btn.btn-primary.outline:active:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:hover:active, .btn.btn-success.outline:active:active, .btn.btn-primary.outline:hover:active, .btn.btn-primary.outline:active:active {
   background: #3e359f;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:hover:focus:active, .btn.btn-success.outline:hover:hover:active, .btn.btn-success.outline:active:focus:active, .btn.btn-success.outline:active:hover:active, .btn.btn-primary.outline:hover:focus:active, .btn.btn-primary.outline:hover:hover:active, .btn.btn-primary.outline:active:focus:active, .btn.btn-primary.outline:active:hover:active {
   background: #3e359f;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:hover.disabled, .btn.btn-success.outline:hover:disabled, .btn.btn-success.outline:active.disabled, .btn.btn-success.outline:active:disabled, .btn.btn-primary.outline:hover.disabled, .btn.btn-primary.outline:hover:disabled, .btn.btn-primary.outline:active.disabled, .btn.btn-primary.outline:active:disabled {
   opacity: .55;
   color: #303030;
@@ -994,11 +1002,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:hover.disabled:hover, .btn.btn-success.outline:hover:disabled:hover, .btn.btn-success.outline:active.disabled:hover, .btn.btn-success.outline:active:disabled:hover, .btn.btn-primary.outline:hover.disabled:hover, .btn.btn-primary.outline:hover:disabled:hover, .btn.btn-primary.outline:active.disabled:hover, .btn.btn-primary.outline:active:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-success.outline:hover.disabled:focus, .btn.btn-success.outline:hover:disabled:focus, .btn.btn-success.outline:active.disabled:focus, .btn.btn-success.outline:active:disabled:focus, .btn.btn-primary.outline:hover.disabled:focus, .btn.btn-primary.outline:hover:disabled:focus, .btn.btn-primary.outline:active.disabled:focus, .btn.btn-primary.outline:active:disabled:focus {
   box-shadow: none;
 }
@@ -1007,34 +1015,35 @@ ul {
   background: #ffffff;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #5046C1;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   width: 28.7rem;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-secondary:hover {
   background: #ededed;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-secondary:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-secondary:active {
   background: #e6e6e6;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-secondary:focus:active, .btn.btn-secondary:hover:active {
   background: #e6e6e6;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-secondary.disabled, .btn.btn-secondary:disabled {
   opacity: .55;
   color: #303030;
@@ -1042,11 +1051,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-secondary.disabled:hover, .btn.btn-secondary:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-secondary.disabled:focus, .btn.btn-secondary:disabled:focus {
   box-shadow: none;
 }
@@ -1055,6 +1064,7 @@ ul {
   background: transparent;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #5046C1;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
@@ -1063,28 +1073,28 @@ ul {
   border: 0.15rem solid #5046C1;
   box-shadow: none;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover {
   background: transparent;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:active {
   background: transparent;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:focus:active, .btn.btn-secondary.outline:hover:active {
   background: transparent;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline.disabled, .btn.btn-secondary.outline:disabled {
   opacity: .55;
   color: #303030;
@@ -1092,11 +1102,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline.disabled:hover, .btn.btn-secondary.outline:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline.disabled:focus, .btn.btn-secondary.outline:disabled:focus {
   box-shadow: none;
 }
@@ -1105,34 +1115,35 @@ ul {
   background: #5046C1;
   border-radius: 50px;
   border: 2px solid #105EBA;
+  box-shadow: 0 15px 5px 1px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   width: 28.7rem;
 }
-/* line 65, ../scss/config/_mixins.scss */
+/* line 66, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover:hover, .btn.btn-secondary.outline:active:hover {
   background: #4239aa;
   transition: all 0.2s ease;
   text-decoration: none;
 }
-/* line 70, ../scss/config/_mixins.scss */
+/* line 71, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover:focus, .btn.btn-secondary.outline:active:focus {
   outline: 0;
   box-shadow: 0 0 0 0.6rem rgba(6, 54, 190, 0.25);
   text-decoration: none;
 }
-/* line 75, ../scss/config/_mixins.scss */
+/* line 76, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover:active, .btn.btn-secondary.outline:active:active {
   background: #3e359f;
 }
-/* line 80, ../scss/config/_mixins.scss */
+/* line 81, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover:focus:active, .btn.btn-secondary.outline:hover:hover:active, .btn.btn-secondary.outline:active:focus:active, .btn.btn-secondary.outline:active:hover:active {
   background: #3e359f;
   outline: 0;
 }
-/* line 85, ../scss/config/_mixins.scss */
+/* line 86, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover.disabled, .btn.btn-secondary.outline:hover:disabled, .btn.btn-secondary.outline:active.disabled, .btn.btn-secondary.outline:active:disabled {
   opacity: .55;
   color: #303030;
@@ -1140,11 +1151,11 @@ ul {
   box-shadow: none;
   cursor: auto;
 }
-/* line 92, ../scss/config/_mixins.scss */
+/* line 93, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover.disabled:hover, .btn.btn-secondary.outline:hover:disabled:hover, .btn.btn-secondary.outline:active.disabled:hover, .btn.btn-secondary.outline:active:disabled:hover {
   background: #cccccc;
 }
-/* line 95, ../scss/config/_mixins.scss */
+/* line 96, ../scss/config/_mixins.scss */
 .btn.btn-secondary.outline:hover.disabled:focus, .btn.btn-secondary.outline:hover:disabled:focus, .btn.btn-secondary.outline:active.disabled:focus, .btn.btn-secondary.outline:active:disabled:focus {
   box-shadow: none;
 }
@@ -1165,37 +1176,37 @@ ul {
     font-size: 18px;
   }
 }
-/* line 146, ../scss/config/_mixins.scss */
+/* line 147, ../scss/config/_mixins.scss */
 input::-webkit-input-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 147, ../scss/config/_mixins.scss */
+/* line 148, ../scss/config/_mixins.scss */
 input::-moz-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 148, ../scss/config/_mixins.scss */
+/* line 149, ../scss/config/_mixins.scss */
 input:-ms-input-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 146, ../scss/config/_mixins.scss */
+/* line 147, ../scss/config/_mixins.scss */
 textarea::-webkit-input-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 147, ../scss/config/_mixins.scss */
+/* line 148, ../scss/config/_mixins.scss */
 textarea::-moz-placeholder {
   color: #8CC1F5;
   font-weight: 900;
 }
 
-/* line 148, ../scss/config/_mixins.scss */
+/* line 149, ../scss/config/_mixins.scss */
 textarea:-ms-input-placeholder {
   color: #8CC1F5;
   font-weight: 900;
@@ -1205,23 +1216,31 @@ textarea:-ms-input-placeholder {
 .contact {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-  min-height: 650px;
+  margin: 70px 0;
+  min-height: 50px;
   min-width: 418px;
   text-align: center;
 }
 /* line 11, ../scss/base/_form.scss */
-.contact form {
-  margin-top: 65px;
-  padding: 0 65px;
+.contact .container {
+  width: auto;
+  padding: 0;
 }
 /* line 14, ../scss/base/_form.scss */
-.contact form .form-group {
-  color: #8CC1F5;
-  margin-top: 29px;
+.contact .container .main__title {
+  margin-bottom: 40px;
 }
-/* line 15, ../scss/base/_form.scss */
-.contact form .form-group input {
+/* line 17, ../scss/base/_form.scss */
+.contact .container form {
+  padding: 0 65px;
+}
+/* line 19, ../scss/base/_form.scss */
+.contact .container form .form-group {
+  color: #8CC1F5;
+  margin-bottom: 0;
+}
+/* line 20, ../scss/base/_form.scss */
+.contact .container form .form-group input {
   background: #D3E9FF;
   border: none;
   min-height: 6.3rem;
@@ -1229,55 +1248,92 @@ textarea:-ms-input-placeholder {
   padding: 20px;
   width: 100%;
 }
-/* line 27, ../scss/base/_form.scss */
-.contact button {
+/* line 32, ../scss/base/_form.scss */
+.contact .container button {
   display: inline-block;
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
-/* line 33, ../scss/base/_form.scss */
+/* line 39, ../scss/base/_form.scss */
 textarea {
   background: #D3E9FF;
   border: none;
-  margin-top: 29px;
   min-height: 13.7rem;
   padding: 20px;
   width: 100%;
 }
-/* line 40, ../scss/base/_form.scss */
+/* line 45, ../scss/base/_form.scss */
 textarea p {
   display: none;
 }
 
 @media (min-width: 1440px) {
-  /* line 46, ../scss/base/_form.scss */
-  .contact__col {
-    display: flex;
-  }
-
-  /* line 50, ../scss/base/_form.scss */
-  .contact form {
-    align-items: flex-start;
-    flex-wrap: wrap;
+  /* line 51, ../scss/base/_form.scss */
+  .contact {
+    margin: 100px 0;
   }
   /* line 53, ../scss/base/_form.scss */
-  .contact form .form-group {
+  .contact .container {
+    width: auto;
+    padding: 0;
+  }
+  /* line 56, ../scss/base/_form.scss */
+  .contact .container .main__title {
+    margin: 25px 0 77px 0;
+  }
+  /* line 59, ../scss/base/_form.scss */
+  .contact .container form {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 60, ../scss/base/_form.scss */
+  .contact .container form .contact__col {
+    display: flex;
+    min-height: 107px;
+  }
+  /* line 63, ../scss/base/_form.scss */
+  .contact .container form .contact__col input {
+    font-size: 2.5rem;
+  }
+  /* line 70, ../scss/base/_form.scss */
+  .contact .container form .form-group {
     margin-right: 4rem;
     width: 48%;
   }
-  /* line 56, ../scss/base/_form.scss */
-  .contact form .form-group:nth-child(2n) {
+  /* line 73, ../scss/base/_form.scss */
+  .contact .container form .form-group:nth-child(2n) {
     margin-right: 0;
   }
-  /* line 59, ../scss/base/_form.scss */
-  .contact form .form-group input {
+  /* line 76, ../scss/base/_form.scss */
+  .contact .container form .form-group input {
     min-width: inherit;
     width: 100%;
   }
-  /* line 63, ../scss/base/_form.scss */
-  .contact form .form-group.message-field {
+  /* line 80, ../scss/base/_form.scss */
+  .contact .container form .form-group.message-field {
     margin-right: 0;
     width: 100%;
+  }
+  /* line 83, ../scss/base/_form.scss */
+  .contact .container form .form-group.message-field textarea {
+    font-size: 2.5rem;
+    margin: 29px 0 98px 0;
+    min-height: 35.0rem;
+  }
+  /* line 90, ../scss/base/_form.scss */
+  .contact .container form .form__button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  /* line 95, ../scss/base/_form.scss */
+  .contact .container form .form__button button {
+    font-size: 35px;
+    height: 105px;
+    margin: 0 0 19px 0;
+    width: 364px;
   }
 }
 /* line 1, ../scss/base/_links.scss */
@@ -1591,10 +1647,12 @@ header .container {
   height: 4.0rem;*/
   transition: all 250ms;
 }
-/* line 20, ../scss/components/_header.scss */
+/* line 22, ../scss/components/_header.scss */
+.button__menu.menu-open span:nth-child(1) {
+  transform: rotate(-45deg);
+}
+/* line 27, ../scss/components/_header.scss */
 .button__menu span {
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
   background-color: #0636BE;
   display: block;
   height: 10px;
@@ -1604,69 +1662,37 @@ header .container {
   border-radius: 10px;
   width: 50px;
 }
-/* line 31, ../scss/components/_header.scss */
-.button__menu span:nth-child(1) button.open {
-  animation-name: top-line-animation;
+/* line 36, ../scss/components/_header.scss */
+.button__menu span:nth-child(1) {
   height: 10px;
   margin-bottom: 7px;
   top: 0;
   width: 50px;
 }
-/* line 38, ../scss/components/_header.scss */
-.button__menu span:first-child(2) button.open {
-  animation-name: top-line-animation;
+/* line 42, ../scss/components/_header.scss */
+.button__menu span:first-child(2) {
   height: 10px;
   top: 9px;
   width: 50px;
 }
-/* line 44, ../scss/components/_header.scss */
-.button__menu span:last-child button.open {
-  animation-name: top-line-animation;
-  height: 10px;
-  margin-top: 7px;
-  top: 18px;
-  width: 50px;
-}
-/* line 51, ../scss/components/_header.scss */
-.button__menu span:nth-child(1) button {
-  animation-name: top-line-animation;
-  height: 10px;
-  margin-bottom: 7px;
-  top: 0;
-  width: 50px;
-}
-/* line 58, ../scss/components/_header.scss */
-.button__menu span:first-child(2) button {
-  animation-name: top-line-animation;
-  height: 10px;
-  top: 9px;
-  width: 50px;
-}
-/* line 64, ../scss/components/_header.scss */
-.button__menu span:last-child button {
-  animation-name: top-line-animation;
+/* line 47, ../scss/components/_header.scss */
+.button__menu span:last-child {
   height: 10px;
   margin-top: 7px;
   top: 18px;
   width: 50px;
 }
 
-@keyframes top-line-animation {
-  50%, 100% {
-    margin: 0 auto;
-    transform: translateY(2px) rotate(-45deg);
-  }
-}
-/* line 81, ../scss/components/_header.scss */
+/* line 56, ../scss/components/_header.scss */
 .cont-menu {
   background: #f6f7fB;
   box-shadow: 5px 5px 10px black;
   display: flex;
-  height: 22.4rem;
+  height: 38.0rem;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 12px;
   opacity: 0;
-  padding: 0px 20px;
+  padding: 0px 30px;
   position: absolute;
   right: 0;
   top: 9rem;
@@ -1679,33 +1705,37 @@ header .container {
   -ms-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 97, ../scss/components/_header.scss */
+/* line 72, ../scss/components/_header.scss */
 .cont-menu.open {
+  border-radius: 0 0 0 10px;
   opacity: 1;
   visibility: visible;
 }
+/* line 78, ../scss/components/_header.scss */
+.cont-menu .navbar-list a {
+  font-size: 30px;
+}
 
-/* line 103, ../scss/components/_header.scss */
+/* line 84, ../scss/components/_header.scss */
 .navbar-list {
   list-style: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-/* line 108, ../scss/components/_header.scss */
+/* line 89, ../scss/components/_header.scss */
 .navbar-list li {
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 40px;
 }
-/* line 112, ../scss/components/_header.scss */
+/* line 92, ../scss/components/_header.scss */
 .navbar-list span {
   margin-right: 22px;
 }
 
 @media (min-width: 768px) {
-  /* line 118, ../scss/components/_header.scss */
+  /* line 98, ../scss/components/_header.scss */
   body {
-    background: red;
+    background: #ffffff;
   }
 }
 /*@include mq-min(lg){
@@ -1714,21 +1744,21 @@ header .container {
     }
 }*/
 @media (min-width: 1440px) {
-  /* line 129, ../scss/components/_header.scss */
+  /* line 109, ../scss/components/_header.scss */
   header .container {
     min-width: 1440px;
     padding: 0 65px 0 0;
   }
-  /* line 130, ../scss/components/_header.scss */
+  /* line 110, ../scss/components/_header.scss */
   header .container img {
     margin: 0 0 0 94px;
     border: none;
   }
-  /* line 136, ../scss/components/_header.scss */
+  /* line 116, ../scss/components/_header.scss */
   header .container button {
     display: none;
   }
-  /* line 139, ../scss/components/_header.scss */
+  /* line 119, ../scss/components/_header.scss */
   header .container .cont-menu {
     opacity: 1;
     visibility: visible;
@@ -1739,15 +1769,16 @@ header .container {
     margin-top: 0;
     padding: 0 0 0 0;
   }
-  /* line 148, ../scss/components/_header.scss */
+  /* line 128, ../scss/components/_header.scss */
   header .container .cont-menu .navbar-list {
     display: flex;
   }
-  /* line 150, ../scss/components/_header.scss */
+  /* line 130, ../scss/components/_header.scss */
   header .container .cont-menu .navbar-list li {
+    margin: 0;
     padding: 0 35px 0 35px;
   }
-  /* line 153, ../scss/components/_header.scss */
+  /* line 134, ../scss/components/_header.scss */
   header .container .cont-menu .navbar-list span {
     display: none;
   }
@@ -1802,6 +1833,30 @@ footer .footer__bottom span {
   height: 5.4rem;
 }
 
+@media (min-width: 1440px) {
+  /* line 45, ../scss/components/_footer.scss */
+  footer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 381px;
+  }
+  /* line 51, ../scss/components/_footer.scss */
+  footer .footer__top {
+    margin: 0;
+  }
+  /* line 53, ../scss/components/_footer.scss */
+  footer .footer__top img {
+    max-width: 20.8rem;
+    max-height: 9.9rem;
+    width: 100%;
+  }
+  /* line 59, ../scss/components/_footer.scss */
+  footer .footer__middle {
+    margin: 0 40px 0 0;
+  }
+}
 /* line 1, ../scss/pages/_home.scss */
 .banner {
   align-items: center;
@@ -1852,7 +1907,7 @@ footer .footer__bottom span {
 @media (min-width: 768px) {
   /* line 41, ../scss/pages/_home.scss */
   body {
-    background: red;
+    background: #ffffff;
   }
 }
 /*@include mq-min(lg){
@@ -1876,15 +1931,21 @@ footer .footer__bottom span {
   }
   /* line 60, ../scss/pages/_home.scss */
   .banner .banner__text h1 {
+    font-size: 7.0rem;
+    line-height: 10.0rem;
     margin: auto;
   }
-  /* line 63, ../scss/pages/_home.scss */
-  .banner .banner__text p {
-    margin-top: 15px;
+  /* line 64, ../scss/pages/_home.scss */
+  .banner .banner__text h1 span {
+    font-size: 5.0rem;
   }
-  /* line 67, ../scss/pages/_home.scss */
+  /* line 68, ../scss/pages/_home.scss */
+  .banner .banner__text p {
+    font-size: 2.7rem;
+  }
+  /* line 72, ../scss/pages/_home.scss */
   .banner .banner__video--play {
-    margin: 60px 0 0 100px;
+    margin: 10px 0 0 100px;
   }
 }
 /* line 1, ../scss/pages/_services.scss */
@@ -1924,21 +1985,39 @@ footer .footer__bottom span {
 @media (min-width: 1440px) {
   /* line 40, ../scss/pages/_services.scss */
   .services-section .container {
-    max-width: 1300px;
+    max-width: 1350px;
+    padding: 0;
+  }
+  /* line 43, ../scss/pages/_services.scss */
+  .services-section .container h2 {
+    font-size: 6.5rem;
   }
 
-  /* line 44, ../scss/pages/_services.scss */
+  /* line 48, ../scss/pages/_services.scss */
   .services {
     border: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0 auto;
-    justify-content: center;
   }
-  /* line 50, ../scss/pages/_services.scss */
+  /* line 54, ../scss/pages/_services.scss */
   .services .service {
-    max-width: 30%;
-    padding: 0 25px 0 25px;
+    max-width: 33.3%;
+    padding: 0 15px;
+  }
+  /* line 57, ../scss/pages/_services.scss */
+  .services .service img {
+    min-width: 429px;
+    width: 100%;
+  }
+  /* line 61, ../scss/pages/_services.scss */
+  .services .service h3 {
+    font-size: 3.8rem;
+  }
+  /* line 64, ../scss/pages/_services.scss */
+  .services .service p {
+    font-size: 2.5rem;
   }
 }
 /* line 1, ../scss/pages/_information.scss */
@@ -2000,30 +2079,50 @@ footer .footer__bottom span {
 @media (min-width: 1440px) {
   /* line 54, ../scss/pages/_information.scss */
   .information-section {
+    background: url("../images/home/backgroundsegundasección.jpg") no-repeat 0 0;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     min-height: 700px;
     align-items: flex-start;
   }
-  /* line 59, ../scss/pages/_information.scss */
-  .information-section p {
-    max-width: 47.9rem;
+  /* line 61, ../scss/pages/_information.scss */
+  .information-section .information {
+    margin: 150px 50px 0 150px;
+    width: 700px;
   }
-  /* line 62, ../scss/pages/_information.scss */
+  /* line 64, ../scss/pages/_information.scss */
+  .information-section .information h2 {
+    font-size: 6.5rem;
+  }
+  /* line 67, ../scss/pages/_information.scss */
+  .information-section .information p {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+    max-width: 100rem;
+  }
+  /* line 73, ../scss/pages/_information.scss */
   .information-section aside {
-    margin: auto;
-    padding: 0;
+    margin: 0 0 0 180px;
+    width: 505px;
+    height: 876px;
+  }
+  /* line 77, ../scss/pages/_information.scss */
+  .information-section aside img {
+    height: auto;
+    margin: 17px 0 50px 0;
+    max-width: 100%;
+    min-width: 420px;
+  }
+  /* line 83, ../scss/pages/_information.scss */
+  .information-section aside h2 {
+    line-height: 50px;
+  }
+  /* line 86, ../scss/pages/_information.scss */
+  .information-section aside .btn {
+    width: 364px;
+    height: 105px;
+    font-size: 35px;
+    padding: 15px 0;
   }
 }
-/*.contact {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    min-height: 650px;
-    min-width: 418px;
-    text-align: center;
-    button {
-        display: inline-block;
-        margin-top: 35px;
-    }
-}*/

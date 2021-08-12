@@ -29,16 +29,16 @@
             </button>
             <div class="cont-menu active" id="menu">
                 <ul role="menu" class="navbar-list">
-                    <li><a href=""> <span class="icon-home"></span>Inicio</a></li>
-                    <li><a href=""> <span class="icon-services"></span>Servicios </a></li>
-                    <li><a href=""> <span class="icon-information"></span>Información </a></li>
-                    <li><a href=""> <span class="icon-contact"></span>Contacto </a></li>
+                    <li><a href="#banners"> <span class="icon-home"></span>Inicio</a></li>
+                    <li><a href="#services-sections"> <span class="icon-services"></span>Servicios </a></li>
+                    <li><a href="#information"> <span class="icon-information"></span>Información </a></li>
+                    <li><a href="#contact"> <span class="icon-contact"></span>Contacto </a></li>
                 </ul>
             </div>
         </div>
     </header>
     <main>
-        <section class="banners">
+        <section id="banners" class="banners">
             <div class="banner">
                 <div class="banner__text">
                     <h1><span>EXPERIENCIA</span>AUDIOVISUAL</h1>
@@ -47,7 +47,7 @@
                     </p>
                 </div>
                 <button class="banner__video--play" data-toggle="modal" data-target="#modalVideo"></button>
-                <a href="services-section" class="banner__arrow"><span></span></a>
+                <a href="" class="banner__arrow"><span></span></a>
             </div>
         </section>
         <section id="services-sections" class="services-section">
@@ -99,7 +99,7 @@
                 </div>
             </div>
         </section>
-        <section class="information-section">
+        <section id="information" class="information-section">
             <div class="information">
                 <h2 class="information__title">¿Qué se hace?</h2>
                 <p class="information__paragraph-one">
@@ -120,29 +120,33 @@
                 <a href="https://www.behance.net/salomateus/" class="btn btn-primary">Ver videos</a>
             </aside>
         </section>
-        <section class="contact">
-            <h2 class="main__title">Contacto</h2>
-            <form action="" class="form">
-                <div class="contact__col form-group">
-                    <label for="name">
-                    </label>
-                    <input type="text" id="name" aria-required="true" placeholder="Nombre">
-                    <p role="alert" hidden aria-live="assertive">El campo nombre es requerido</p>
-                </div>
-                <div class="contact__col form-group">
-                    <label for="email">
-                    </label>
-                    <input type="email" id="email" aria-required="true" placeholder="Correo electrónico">
-                    <p role="alert" hidden aria-live="assertive">El campo correo electronico es requerido</p>
-                </div>
-                <div class="form-group message-field">
-                    <label for="message">
-                    </label>
-                    <textarea name="message" id="message" aria-required="true" placeholder="Mensaje"></textarea>
-                    <p role="alert" hidden aria-live="assertive">El campo mensaje es requerido</p>
-                </div>
-                <button role=tab stype="submit" class="btn btn-primary">Enviar mensaje</button>
-            </form>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="main__title">Contacto</h2>
+                <form action="" class="form">
+                    <div class="contact__col form-group">
+                        <label for="name">
+                        </label>
+                        <input type="text" id="name" aria-required="true" placeholder="Nombre">
+                        <p role="alert" hidden aria-live="assertive">El campo nombre es requerido</p>
+                    </div>
+                    <div class="contact__col form-group">
+                        <label for="email">
+                        </label>
+                        <input type="email" id="email" aria-required="true" placeholder="Correo electrónico">
+                        <p role="alert" hidden aria-live="assertive">El campo correo electronico es requerido</p>
+                    </div>
+                    <div class="form-group message-field">
+                        <label for="message">
+                        </label>
+                        <textarea name="message" id="message" aria-required="true" placeholder="Mensaje"></textarea>
+                        <p role="alert" hidden aria-live="assertive">El campo mensaje es requerido</p>
+                    </div>
+                    <div class="form__button">
+                        <button role=tab stype="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     <footer>

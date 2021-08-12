@@ -38,18 +38,32 @@
 @include mq-min(xl){
     .services-section {
         .container {
-            max-width: 1300px;
+            max-width: 1350px;
+            padding: 0;
+            h2 {
+                font-size: 6.5rem;
+            }
         }
     }
     .services {
         border: none;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin: 0 auto;
-        justify-content: center;
         .service {
-            max-width: 30%;
-            padding: 0 25px 0 25px;
+            max-width: 33.3%;
+            padding: 0 15px;
+            img {
+                min-width: 429px;
+                width: 100%;
+            }
+            h3 {
+                font-size: 3.8rem;
+            }
+            p {
+                font-size: 2.5rem;
+            }
         }
     }
 }
