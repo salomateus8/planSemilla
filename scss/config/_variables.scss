@@ -61,12 +61,13 @@ $sizes: (
 
 $breakpoints: (
    x   : 325px, //tel portrait
+   smm  : 418px, //tel landscape
    sm  : 540px, //tel landscape
    md  : 768px, //ipad portrait
    lg  : 960px, //ipad landscape
    /* l  : 1360px,
-   ml  : 1440px,
-   xx   : 1500px,*/
+   ml  : 1440px,*/
+   xx   : 1280px,
    xl  : 1440px, //desktop1200
 );
 

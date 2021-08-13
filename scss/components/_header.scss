@@ -93,42 +93,66 @@ header {
     }
  }
 
- @include mq-min(md){
-    body{
-        background: color(grayscale,white);
+@include mq-min(x) {
+    /*header {
+        .container {
+            .button__menu {
+            
+            }
+        }
+    }*/
+}
+
+@include mq-min(smm){
+    header {
+        .container {
+            .button__menu {
+                right: 30px;
+            }
+        }
     }
 }
-/*@include mq-min(lg){
-    body{
-        background: purple;
+
+@include mq-min(sm){
+    header {
+        .container {
+            .button__menu {
+                right: 30px;
+            }
+        }
     }
-}*/
-@include mq-min(xl){
+}
+
+
+@include mq-min(lg){
     header{
         .container {
             img {
-                margin: 0 0 0 94px;
                 border: none;
+                margin: 0 0 0 25px;
             }
-            min-width: 1440px;
-            padding: 0 65px 0 0;
+            min-width: 0;
+            padding: 0 25px 0 25px;
             button {
                 display: none;
             }
             .cont-menu {
-            opacity: 1;
-            visibility: visible;
             background: none;
             box-shadow: none;
-            position: static;
             height: auto;
             margin-top: 0;
+            opacity: 1;
             padding: 0 0 0 0;
+            position: static;
+            visibility: visible;
             .navbar-list {
                 display: flex;
+                a {
+                    font-size: 28px;
+                }
                 li {
                     margin: 0;
-                    padding: 0 35px 0 35px;
+                    padding: 0 25px 0 0;
                 }
                 span {
                     display: none;
@@ -139,3 +163,40 @@ header {
 
     }
 }
+
+@include mq-min(xx){
+    header {
+        .container {
+            padding: 0;
+            .cont-menu {
+                .navbar-list{
+                    li {
+                        padding: 0 0 0 70px;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@include mq-min(xl){
+    header{
+        .container {
+            img {
+                border: none;
+                margin: 0 0 0 94px;
+            }
+            min-width: 1440px;
+            padding: 0 65px 0 0;
+            .navbar-list {
+                display: flex;
+                li {
+                    margin: 0;
+                    padding: 0 35px 0 35px;
+                }
+            }
+        }
+    }
+
+ }

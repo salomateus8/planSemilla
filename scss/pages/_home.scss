@@ -4,7 +4,6 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     min-height: 769px;
     min-width: 418px;
     position: relative;
@@ -37,16 +36,35 @@
         width: 20.5rem; /*205px*/
     }
 }
+
 @include mq-min(md){
-    body{
-        background: color(grayscale,white);
+    .banner {
+        h1 {
+            font-size: 5rem;
+            span {
+                font-size: 3.5rem;
+            }
+        }
+        p {
+            font-size: 2rem;
+        }
     }
 }
-/*@include mq-min(lg){
-    body{
-        background: purple;
+
+@include mq-min(lg){
+    .banner {
+        h1 {
+            font-size: 5.5rem;
+            span {
+                font-size: 3.5rem;
+            }
+        }
+        p {
+            font-size: 2.1rem;
+        }
     }
-}*/
+}
+
 @include mq-min(xl){
     .banner {
         background: url("../images/home/backgroundcsddHeaderfinal.jpg") no-repeat 0 0;

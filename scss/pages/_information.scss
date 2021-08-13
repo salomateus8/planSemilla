@@ -50,6 +50,39 @@
     }
 }
 
+@include mq-min(sm){
+    .information {
+        margin: 50px 80px 0 80px;
+    }
+}
+
+@include mq-min(md){
+    .information-section {
+        min-height: 1150px;
+        .information {
+            margin: 50px 110px 0 110px;
+        }
+    }
+}
+
+@include mq-min(lg){
+    .information-section{
+        flex-direction: row;
+        min-height: 100px;
+        .information {
+            margin: 130px 50px 0 50px;
+        }
+        aside {
+            img {
+                margin: 17px 17px 17px 17px;
+            }
+            h2 {
+                line-height: 4.5rem;
+            }
+        }
+    }
+}
+
 @include mq-min(xl){
     .information-section {
         background: url("../images/home/backgroundsegundasección.jpg") no-repeat 0 0;

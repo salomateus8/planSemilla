@@ -35,6 +35,45 @@
 
 }
 
+@include mq-min(sm){
+    .service {
+        margin: 0 auto;
+    }
+}
+
+@include mq-min(md){
+    .container {
+        padding: 0 40px;
+        .service {
+            max-width: 629px;
+            padding: 0;
+        }
+    }
+}
+
+@include mq-min(lg){
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 829px;
+    }
+}
+
+@include mq-min(xx){
+    .container{
+        padding: 60px 40px;
+        .services{
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 1100px;
+            .service{
+                max-width: 410px;
+            }
+        }
+    }
+}
+
 @include mq-min(xl){
     .services-section {
         .container {
