@@ -6,7 +6,6 @@
     flex-direction: column;
     margin: 70px 0;
     min-height: 50px;
-    min-width: 418px;
     text-align: center;
     .container {
         width: auto;
@@ -15,16 +14,7 @@
             margin-bottom: 40px;
         }
         form {
-            padding: 0 65px;
             .form-group {
-                input {
-                    background: color( primary, light );
-                    border: none;
-                    min-height: 6.3rem;
-                    min-width: 28.7rem;
-                    padding: 20px;
-                    width: 100%;
-                }
                 color: #8CC1F5;
                 margin-bottom: 0;
             }
@@ -34,6 +24,15 @@
             margin-top: 40px;
         }
     }
+}
+
+input {
+    background: color( primary, light );
+    border: none;
+    min-height: 6.3rem;
+    min-width: 28.7rem;
+    padding: 20px;
+    width: 100%;
 }
 
 textarea {
@@ -47,9 +46,57 @@ textarea {
     }
 }
 
+@include mq-min(smm) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0;
+        min-height: 50px;
+        min-width: 418px;
+        text-align: center;
+        .container {
+            width: auto;
+            padding: 0;
+            .main__title {
+                margin-bottom: 40px;
+            }
+            form {
+                padding: 0 65px;
+                .form-group {
+                    color: #8CC1F5;
+                    margin-bottom: 0;
+                }
+            }
+            button {
+                display: inline-block;
+                margin-top: 40px;
+            }
+        }
+    }
+    
+    input {
+        background: color( primary, light );
+        border: none;
+        min-height: 6.3rem;
+        min-width: 28.7rem;
+        padding: 20px;
+        width: 100%;
+    }
+    
+    textarea {
+        background: color( primary, light );
+        border: none;
+        min-height: 13.7rem;
+        padding: 20px;
+        width: 100%;
+        p {
+            display: none
+        }
+    }
+}
+
 @include mq-min(md) {
     .contact{
-        .container {
             form{
                 align-items: flex-start;
                 display: flex;
@@ -94,27 +141,24 @@ textarea {
                     }
                 }
             }
-       }
+       
    }
 }
 
 @include mq-min(lg){
     .contact{
-        .container {
             form{
                 .form-group{
                     margin-right: 4rem;
                     width: 47.5%;
                 }
             }
-        }
     }
 }
 
 @include mq-min(xl){
     .contact{
         margin: 100px 0;
-        .container {
             .main__title {
                 margin: 25px 0 77px 0;
             }
@@ -155,6 +199,5 @@ textarea {
                     }
                 }
             }
-        }
     }
 }

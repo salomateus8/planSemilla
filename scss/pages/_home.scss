@@ -5,23 +5,23 @@
     display: flex;
     flex-direction: column;
     min-height: 769px;
-    min-width: 418px;
     position: relative;
     text-align: center;
-    h1 {
+    &__title {
+        color: color( grayscale, white );
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-top: 149px;
         span {
             display: block;
-            font-size: 3.0rem;
+            font-size: 2.5rem;
             font-weight: bold;
             line-height: 4.6rem;
         }
-        color: color( grayscale, white );
-        font-size: 4.5rem;
-        font-weight: bold;
-        margin-top: 149px;
     }
     p {
         color: color( grayscale, white );
+        font-size: 13px;
     }
     video {
         margin: 0 auto;
@@ -35,6 +35,19 @@
         margin-top: 90px;
         width: 20.5rem; /*205px*/
     }
+}
+
+@include mq-min(smm) {
+    .banner {
+        min-width: 418px;
+        &__title {
+            font-size: 4.5rem;
+            span {
+                font-size: 3.0rem;
+            }
+        }
+    }
+
 }
 
 @include mq-min(md){
@@ -69,9 +82,8 @@
     .banner {
         background: url("../images/home/backgroundcsddHeaderfinal.jpg") no-repeat 0 0;
         background-size: cover;
-        display: flex;
         flex-direction: row;
-        .banner__text {
+        &__text {
             margin: 0 100px 0 100px;
             padding: 0 100px 0 31px;
             text-align: left;
@@ -87,7 +99,7 @@
                 font-size: 2.7rem;
             }
         }
-        .banner__video--play {
+        &__video--play {
             margin: 10px 0 0 100px;
         }
     }

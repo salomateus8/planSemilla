@@ -13,7 +13,7 @@
         .modal-header {
             background: white;
             padding: 0;
-            P { 
+            p { 
                 color: color(primary,base);
                 font-family: $font-primary;
                 font-weight: 600;
@@ -28,9 +28,17 @@
                 right: 20px;
             }
         }
-        video {
-            display: block;
-            margin: 0 auto;
+        .media-modal {
+            padding-bottom: 200px;
+            position: relative;
+            iframe,video {
+                height: 100%;
+                left: 0;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
         }
     }
 }
@@ -40,6 +48,21 @@
         .modal-dialog{
             top: 200px;
         }
+        .modal-content {
+            .media-modal {
+                padding-bottom: 300px;
+                position: relative;
+                iframe,video {
+                    height: 100%;
+                    left: 0;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+            }
+        }
+
     }
 }
 
@@ -50,7 +73,7 @@
         .modal-dialog {
             display: flex;
             margin: 0 auto;
-            min-width: 74rem;
+            max-width: 74rem;
             min-height: 36rem;
             transform: translateY(0%);
             top: 200px;
@@ -59,20 +82,43 @@
             p {
                 font-size: 30px;
             }
-            video {
-                min-width: 640px;
-                min-height: 360px;
+                .media-modal {
+                    padding-bottom: 400px;
+                    position: relative;
+                    iframe,video {
+                        height: 100%;
+                        left: 0;
+                        object-fit: cover;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                    }
+                }
             }
 
         }
 
     }
-}
+
 
 @include mq-min(lg){
     .modal {
         .modal-dialog {
             min-width: 88rem;
+        }
+        .modal-content{
+            .media-modal {
+                padding-bottom: 500px;
+                position: relative;
+                iframe,video {
+                    height: 100%;
+                    left: 0;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -80,9 +126,17 @@
 @include mq-min(xx) {
     .modal {
         .modal-content {
-            video {
-                min-width: 854px;
-                min-height: 480px;
+            .media-modal {
+                padding-bottom: 500px;
+                position: relative;
+                iframe,video {
+                    height: 100%;
+                    left: 0;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
             }
 
         }
@@ -96,7 +150,7 @@
         .modal-dialog {
             display: flex;
             margin: 0 auto;
-            min-width: 138rem;
+            max-width: 138rem;
             min-height: 72rem;
             transform: translateY(0%);
             top: 30px;
@@ -106,7 +160,8 @@
             background-size: cover;
             box-shadow: 1px 7px 25px rgba(0,0,0,1.2);
             border: none;
-            min-width: 130rem;
+            margin: 0 auto;
+            max-width: 130rem;
             min-height: 72rem;
             .modal-header {
                 background: white;
@@ -128,11 +183,17 @@
                     right: 20px;
                 }
             }
-            video {
-                display: block;
-                margin: 0 auto;
-                min-width: 128rem;
-                min-height: 72rem;
+            .media-modal {
+                padding-bottom: 700px;
+                position: relative;
+                iframe,video {
+                    height: 100%;
+                    left: 0;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
             }
         }
     }
