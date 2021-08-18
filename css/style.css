@@ -2572,7 +2572,7 @@ header .container {
   }
   /* line 116, ../scss/pages/_information.scss */
   .information-section .information {
-    margin: 150px 50px 0 150px;
+    margin: 130px 50px 0 150px;
     width: 700px;
   }
   /* line 119, ../scss/pages/_information.scss */
@@ -2595,14 +2595,15 @@ header .container {
   .information-section aside img {
     height: auto;
     margin: 17px 0 50px 0;
-    max-width: 100%;
-    min-width: 420px;
+    max-width: 420px;
+    min-height: 420px;
+    width: 100%;
   }
-  /* line 138, ../scss/pages/_information.scss */
+  /* line 139, ../scss/pages/_information.scss */
   .information-section aside h2 {
     line-height: 50px;
   }
-  /* line 141, ../scss/pages/_information.scss */
+  /* line 142, ../scss/pages/_information.scss */
   .information-section aside .btn {
     width: 364px;
     height: 105px;
